@@ -76,13 +76,21 @@ header ul li a:hover {
     color: red;
 }
 /* ==================== OUR WORK ====================*/
-
+/* ---------- sidebar ---------- */
 .sidda {
-    background: green;
 /*    width: 200px;*/
     height: 700px;
     position: fixed;
     color: red;
     top: 60px;
     z-index: 99999;
+}
+
+.sidda ul li a {
+    color: orange;
+}
+
+.sidda ul.nav.navbar-nav {
+    display: inline-block;
+    color: red;
 }
