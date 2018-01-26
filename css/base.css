@@ -1,6 +1,8 @@
 /* ==================== GENERAL ====================*/
+
 body {
     background: #1D1D1C;
+    /*    font-family: 'ceragr-blackitaliuploadedfile';*/
 }
 
 /*
@@ -13,29 +15,41 @@ body {
 }
 */
 
-.col-lg-4, col-md-4, col-sm-4, col-xs-4{
-    float:left;
+.col-lg-4,
+col-md-4,
+col-sm-4,
+col-xs-4 {
+    float: left;
 }
 
-.post, .sidebar {
-    display:block;
-    border:1px solid #ffffff;
-    border-radius:3px;
-    margin-bottom:20px;
-    background-color:#dadfe3;
+.post,
+.sidebar {
+    display: block;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    background-color: #dadfe3;
+}
+
+h1,
+h2,
+p,
+a {
+    font-family: 'ceragr-bolduploaded_file';
 }
 
 /* ==================== HEADER ====================*/
+
 header {
     background: #1D1D1C;
     position: fixed;
-    
+
     margin: 0 auto;
 
     top: 0;
     width: 100%;
     z-index: 9999;
-/*    max-width: 1250px !important;*/
+    /*    max-width: 1250px !important;*/
 }
 
 #navbar {
@@ -75,10 +89,13 @@ header ul li a:hover {
 .active a {
     color: red;
 }
+
 /* ==================== OUR WORK ====================*/
+
 /* ---------- sidebar ---------- */
+
 .sidda {
-/*    width: 200px;*/
+    /*    width: 200px;*/
     height: 700px;
     position: fixed;
     color: red;
@@ -86,8 +103,13 @@ header ul li a:hover {
     z-index: 99999;
 }
 
+.sidda li {
+    padding: 10px 0;
+}
+
 .sidda ul li a {
     color: orange;
+    font-family: 'ceragr-bolduploaded_file';
 }
 
 .sidda ul.nav.navbar-nav {
