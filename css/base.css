@@ -96,6 +96,7 @@ header ul li a:hover {
     position: fixed;
     display: block;
     margin-left: 14px;
+    opacity: 1;
 }
 
 /* ---------- container edit ---------- */
