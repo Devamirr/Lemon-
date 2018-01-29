@@ -99,7 +99,7 @@ header ul li a:hover {
     max-width: 85%;
 }
 
-/* ---------- sidebar ---------- */
+/* ---------- sidebar heading ---------- */
 
 .row.page-heading {
     margin-top: 67px;
@@ -136,4 +136,87 @@ header ul li a:hover {
     color: #FFDE13;
     text-decoration: none;
     border-bottom: 1px solid #FFDE13;
+}
+
+/* ---------- Slide in overlay animation ---------- */
+
+.project {
+    position: relative;
+    width: 100%;
+}
+
+.project:hover {
+    cursor: pointer;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.project:hover .overlay {
+    height: 100%;
+}
+
+.text {
+    color: red;
+    font-size: 20px;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    width: 80%;
+}
+
+.overlay .text p {
+    color: #999;
+    font-size: 0.8rem;
+}
+
+.overlay p.project-type {
+    color: orange;
+    margin-bottom: 0px;
+}
+
+.overlay h1.project-name {
+    color: #FFDE13;
+    float: left;
+    /* line-height: 1; */
+    padding-right: 10px;
+    margin: 0;
+    padding-top: -7PX;
+    border-right: 5px solid red;
+    position: relative;
+    display: block;
+    WORD-BREAK: break-all;
+}
+
+.left-project-name {
+    width: 50%;
+/*    height: auto;*/
+/*
+    background: green;
+    float: left;
+*/
+}
+
+.right-project-description {
+    width: 50%;
+    height: auto;
+    float: left;
 }
