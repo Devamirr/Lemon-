@@ -23,8 +23,8 @@
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-     <script src="js/base.js"></script>
+
+    <script src="js/base.js"></script>
 
 </head>
 
@@ -62,10 +62,11 @@
 -->
                             <div id="navbar" class="navbar-collapse">
                                 <ul class="nav navbar-nav">
-                                    <li class=""><a href="#home">Logo</a></li>
-                                    <li><a href="#about">UX / UI</a></li>
-                                    <li><a href="#projects">Print</a></li>
-                                    <li><a href="#projects">Branding</a></li>
+                                    <li data-toggle="portfilter" data-target="logo"><a href="#home">Logo</a></li>
+                                    <li data-toggle="portfilter" data-target="ui"><a href="#about">UX / UI</a></li>
+                                    <li data-toggle="portfilter" data-target="print"><a href="#projects">Print</a></li>
+                                    <li data-toggle="portfilter" data-target="branding"><a href="#projects">Branding</a></li>
+                                    <li data-toggle="portfilter" data-target="all"><a href="#projects">All</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -75,166 +76,159 @@
         </div>
         <div class="container-fluid container-edit col-md-8">
 
-            <div class="row page-heading" >
+            <div class="row page-heading">
                 <h1 class="back-fade">OUR WORK</h1>
             </div>
 
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <div class="col-md-14 project post">
-                        <img src="img/second.jpg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
+                <div class="col-lg-4 col-md-4 project post" data-tag='branding'>
+                    <img src="img/second.jpg" alt="Avatar" class="image">
+                    <a href="detail.html">
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="left-project-name">
+                                    <h1 class="project-name">SHIFT</h1>
+                                </div>
+                                <div class="right-project-description">
+                                    <p class="project-type">UX DESIGN</p>
+                                    <p>12/11 Max Potze</p>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-14 project post">
-                        <img src="img/fourth.jpeg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-14 project post">
-                        <img src="img/third.jpg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <div class="col-md-14 project post">
-                        <img src="img/third.jpg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
+                <div class="col-lg-4 col-md-4 project post" data-tag='ui'>
+                    <img src="img/fourth.jpeg" alt="Avatar" class="image">
+                    <a href="detail.html">
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="left-project-name">
+                                    <h1 class="project-name">SHIFT</h1>
+                                </div>
+                                <div class="right-project-description">
+                                    <p class="project-type">UX DESIGN</p>
+                                    <p>12/11 Max Potze</p>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-14 project post">
-                        <img src="img/fourth.jpeg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-14 project post">
-                        <img src="img/second.jpg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <div class="col-md-14 project post">
-                        <img src="img/second.jpg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
+                <div class="col-lg-4 col-md-4 project post" data-tag='print'>
+                    <img src="img/third.jpg" alt="Avatar" class="image">
+                    <a href="detail.html">
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="left-project-name">
+                                    <h1 class="project-name">SHIFT</h1>
+                                </div>
+                                <div class="right-project-description">
+                                    <p class="project-type">UX DESIGN</p>
+                                    <p>12/11 Max Potze</p>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-14 project post">
-                        <img src="img/third.jpg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-lg-4 col-md-4 project post" data-tag='logo'>
+                    <img src="img/third.jpg" alt="Avatar" class="image">
+                    <a href="detail.html">
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="left-project-name">
+                                    <h1 class="project-name">SHIFT</h1>
+                                </div>
+                                <div class="right-project-description">
+                                    <p class="project-type">UX DESIGN</p>
+                                    <p>12/11 Max Potze</p>
                                 </div>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-14 project post">
-                        <img src="img/fourth.jpeg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 project post" data-tag='logo'>
+                    <img src="img/fourth.jpeg" alt="Avatar" class="image">
+                    <a href="detail.html">
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="left-project-name">
+                                    <h1 class="project-name">SHIFT</h1>
+                                </div>
+                                <div class="right-project-description">
+                                    <p class="project-type">UX DESIGN</p>
+                                    <p>12/11 Max Potze</p>
                                 </div>
                             </div>
-                        </a>
-                    </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 project post" data-tag='branding'>
+                    <img src="img/second.jpg" alt="Avatar" class="image">
+                    <a href="detail.html">
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="left-project-name">
+                                    <h1 class="project-name">SHIFT</h1>
+                                </div>
+                                <div class="right-project-description">
+                                    <p class="project-type">UX DESIGN</p>
+                                    <p>12/11 Max Potze</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 project post" data-tag='logo'>
+                    <img src="img/second.jpg" alt="Avatar" class="image">
+                    <a href="detail.html">
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="left-project-name">
+                                    <h1 class="project-name">SHIFT</h1>
+                                </div>
+                                <div class="right-project-description">
+                                    <p class="project-type">UX DESIGN</p>
+                                    <p>12/11 Max Potze</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 project post" data-tag='branding'>
+                    <img src="img/third.jpg" alt="Avatar" class="image">
+                    <a href="detail.html">
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="left-project-name">
+                                    <h1 class="project-name">SHIFT</h1>
+                                </div>
+                                <div class="right-project-description">
+                                    <p class="project-type">UX DESIGN</p>
+                                    <p>12/11 Max Potze</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-4 col-md-4 project post" data-tag='logo'>
+                    <img src="img/fourth.jpeg" alt="Avatar" class="image">
+                    <a href="detail.html">
+                        <div class="overlay">
+                            <div class="text">
+                                <div class="left-project-name">
+                                    <h1 class="project-name">SHIFT</h1>
+                                </div>
+                                <div class="right-project-description">
+                                    <p class="project-type">UX DESIGN</p>
+                                    <p>12/11 Max Potze</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
     </div>
-
-
 </body>
 
 </html>
