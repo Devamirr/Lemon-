@@ -1,5 +1,13 @@
 /* ==================== GENERAL ====================*/
 
+* {
+  margin: 0 auto;
+  padding: 0;
+  max-width: 100%;
+}
+
+
+
 body {
     background: #1D1D1C;
     /*    font-family: 'ceragr-blackitaliuploadedfile';*/
@@ -146,13 +154,50 @@ header ul li a:hover {
 
 /* ---------- Slide in overlay animation ---------- */
 
-.project {
-    position: relative;
-    width: 100%;
-    transition: 200ms ease-in;
+.grid {
+  text-align: center;
+  max-width: 95vw;
+  margin: 2.5vw auto;
 }
 
-.project:hover {
+
+/* Step 3: how big should the gap be between grid items? remember that the total gap between two items would be double what you set here since both would have that amount set as their individual padding. Also add box-sizing:border-box to make sure the padding doesn't affect the total widh of the item */
+
+.grid-item {
+  padding: 10px 5px;
+  box-sizing: border-box;
+	display:inline;
+  transition: 200ms ease-in;
+}
+
+
+/* Step 4: Add media queries (subjective) to make the whole grid resposive. */
+
+@media (min-width: 500px) {
+  .grid-item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .grid-item {
+    width: 33.333%;
+  }
+}
+
+@media (min-width: 1700px) {
+  .grid-item {
+    width: 25%;
+  }
+}
+
+@media (min-width: 2100px) {
+  .grid-item {
+    width: 20%;
+  }
+}
+
+.grid-item:hover {
     cursor: pointer;
     -webkit-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75); */
     -moz-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75);
@@ -163,6 +208,8 @@ header ul li a:hover {
     display: block;
     width: 100%;
     height: auto;
+    margin:0px;
+    padding: 0px;
 }
 
 .overlay {
@@ -181,7 +228,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     transition: .5s ease;
 }
 
-.project:hover .overlay {
+.grid-item:hover .overlay {
     height: 100%;
 }
 
@@ -240,17 +287,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
     text-align: left;
     padding-left: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 .overlay {
 
