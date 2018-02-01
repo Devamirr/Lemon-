@@ -51,7 +51,7 @@
 .cbp-l-filters-alignCenter .cbp-filter-counter, .cbp-l-filters-alignRight .cbp-filter-counter, .cbp-l-filters-button .cbp-filter-counter, .cbp-l-filters-buttonCenter .cbp-filter-counter, .cbp-l-filters-text .cbp-filter-counter {
   font: 400 11px/18px "Open Sans", sans-serif;
   border-radius: 3px;
-  color: #FFFFFF;
+  color: black;
   margin: 0 auto;
   padding: 4px 0;
   text-align: center;
@@ -859,9 +859,9 @@
     .cbp-l-filters-buttonCenter .cbp-filter-item:last-child {
       margin-right: 0; }
   .cbp-l-filters-buttonCenter .cbp-filter-counter {
-    background-color: #68ABBC; }
+    background-color: #ffde13; }
     .cbp-l-filters-buttonCenter .cbp-filter-counter:after {
-      border-top: 4px solid #68ABBC; }
+      border-top: 4px solid #ffde13; }
 
 .cbp-l-filters-dropdown {
   margin-bottom: 40px;
