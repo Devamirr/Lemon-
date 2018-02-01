@@ -620,7 +620,6 @@
 .cbp-caption-zoom .cbp-caption-activeWrap {
   opacity: 0;
   top: 0;
-  background-color: rgba(0, 0, 0, 0.9);
   -webkit-transition: opacity .4s;
   transition: opacity .4s; }
 
@@ -3310,8 +3309,7 @@
     font-size: 15px;
     line-height: 21px; } }
 
-.cbp-l-grid-work.cbp-caption-zoom .cbp-caption-activeWrap {
-  background-color: rgba(0, 0, 0, 0.7); }
+.cbp-l-grid-work.cbp-caption-zoom .cbp-caption-activeWrap {}
 
 .cbp-l-grid-work .cbp-item {
   padding: 3px; }
@@ -3408,9 +3406,7 @@
   .cbp-l-grid-projects-desc {
     margin-top: 3px; } }
 
-.cbp-l-grid-masonry-projects .cbp-caption-activeWrap {
-  background-color: #59a3b6;
-  background-color: rgba(89, 163, 182, 0.95); }
+.cbp-l-grid-masonry-projects .cbp-caption-activeWrap {}
 
 .cbp-l-grid-masonry-projects .cbp-l-caption-buttonLeft,
 .cbp-l-grid-masonry-projects .cbp-l-caption-buttonRight {
