@@ -267,8 +267,7 @@
 .cbp-caption-activeWrap {
   display: block; }
 
-.cbp-caption-activeWrap {
-  background-color: #282727; }
+.cbp-caption-activeWrap { }
 
 .cbp-caption-active .cbp-caption,
 .cbp-caption-active .cbp-caption-defaultWrap,
@@ -2316,7 +2315,6 @@
 
 .cbp-popup-lightbox-isIframe .cbp-popup-content {
   width: 100%;
-  padding: 10%;
   display: inline-block; }
 
 @media only screen and (max-width: 768px) {
