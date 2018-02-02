@@ -345,8 +345,6 @@
   height: 100%; }
 
 .cbp-l-caption-alignCenter .cbp-l-caption-body {
-  display: table-cell;
-  vertical-align: middle;
   text-align: center;
   padding: 15px 0; }
 
@@ -2262,7 +2260,8 @@
   display: inline-block;
   vertical-align: middle;
   text-align: left;
-  max-width: 100%; }
+  max-width: 100%;
+  width: 100%; }
 
 .cbp-popup-lightbox .cbp-popup-content {
   display: flex; }
@@ -2316,7 +2315,8 @@
   cursor: pointer; }
 
 .cbp-popup-lightbox-isIframe .cbp-popup-content {
-  width: 75%;
+  width: 100%;
+  padding: 10%;
   display: inline-block; }
 
 @media only screen and (max-width: 768px) {
