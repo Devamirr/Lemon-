@@ -13,7 +13,7 @@
   box-sizing: border-box; }
 
 .cbp-l-grid-agency-title, .cbp-l-grid-agency-desc, .cbp-l-grid-work-title, .cbp-l-grid-work-desc, .cbp-l-grid-blog-title, .cbp-l-grid-projects-title, .cbp-l-grid-projects-desc, .cbp-l-grid-masonry-projects-title, .cbp-l-grid-masonry-projects-desc {
-  white-space: nowrap;
+  white-space: normal;
   overflow: hidden;
   text-overflow: ellipsis; }
 
@@ -345,7 +345,7 @@
 
 .cbp-l-caption-alignCenter .cbp-l-caption-body {
   text-align: center;
-  padding: 15px 0; }
+  padding: 0px 20px; }
 
 .cbp-l-caption-alignCenter .cbp-l-caption-buttonLeft,
 .cbp-l-caption-alignCenter .cbp-l-caption-buttonRight {

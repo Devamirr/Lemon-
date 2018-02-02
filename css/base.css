@@ -388,7 +388,7 @@ header ul li a:hover {
 }
 
 .left-project-name {
-    width: 50%;
+    width: 70%;
     float: left;
     /*    height: auto;*/
     /*
@@ -398,7 +398,7 @@ header ul li a:hover {
 }
 
 .right-project-description {
-    width: 50%;
+    width: 30%;
     height: auto;
     float: left;
     text-align: left;
