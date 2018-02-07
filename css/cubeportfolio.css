@@ -3414,8 +3414,7 @@
   font: 500 15px/22px "Roboto", sans-serif;
   color: #59a3b6;
   text-align: center;
-  display: block;
-  margin-top: 12px; }
+  display: block; }
 
 .cbp-l-grid-masonry-projects-title:hover {
   color: #457C8B; }
@@ -3719,3 +3718,28 @@
 
 .cbp-social-pinterest path {
   fill: #cb2027; }
+
+.overlayLink {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.maximize-edit { 
+    font-size: 20px!important;
+    color: #ffde13;
+    transition: all 300ms ease;
+}
+
+.maximize-edit:hover {  
+    color: #1d1d1c;
+}
+
+.maximize-box { 
+    right: 20px; 
+    width: 20px;
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}

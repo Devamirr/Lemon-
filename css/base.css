@@ -349,9 +349,9 @@ header ul li a:hover {
 
 .text {
     color: red;
-    font-size: 20px;
+    font-size: 1rem;
     position: absolute;
-    top: 80%;
+    bottom: 4%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -371,6 +371,7 @@ header ul li a:hover {
     color: #FFDE13;
     margin-bottom: 0px;
     letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
 .overlay h1.project-name {
@@ -384,25 +385,30 @@ header ul li a:hover {
     position: relative;
     display: block;
     WORD-BREAK: break-all;
-    font-size: 2rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 300ms;
 }
+
+.overlay h1.project-name:hover {
+    color: #f9cc00;
+}
+
 
 .left-project-name {
-    width: 70%;
+    width: 50%;
     float: left;
-    /*    height: auto;*/
-    /*
-    background: green;
-    float: left;
-*/
-}
-
-.right-project-description {
-    width: 30%;
     height: auto;
     float: left;
     text-align: left;
-    padding-left: 10px;
+
+}
+
+.right-project-description {
+    width: 50%;
+    height: auto;
+    float: left;
+    text-align: left;
 }
 
 .overlay {}
