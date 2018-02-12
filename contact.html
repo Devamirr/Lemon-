@@ -12,10 +12,10 @@
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
     <!-- lemon css -->
-    
+
     <link rel="stylesheet" type="text/css" href="css/cubeportfolio.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
-    
+
 
     <!-- Responsive css -->
     <!--<link rel="stylesheet" type="text/css" href="css/responsive.css">-->
@@ -25,7 +25,7 @@
 
 </head>
 
-<body>
+<body class="contact">
     <!-- Header -->
     <header class="header">
         <nav class="navbar navbar-default">
@@ -37,7 +37,7 @@
 -->
                 <div id="navbar" class="navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class=""><a href="#home">WORK</a></li>
+                        <li class=""><a href="index.html">WORK</a></li>
                         <li><a href="#about">ABOUT</a></li>
                         <li><a href="#projects">CONTACT</a></li>
                     </ul>
@@ -45,15 +45,65 @@
             </div>
         </nav>
     </header>
-<div class="contact-heading">
-    <div class="small-heading">
-        <h1>TALK TO US</h1>
+
+    <!-- ==================== SITE CONTENT ==================== -->
+
+    <!-- Page heading -->
+    <div class="container-fluid">
+        <div class="col-md-9  small-heading">
+            <h1>TALK TO US</h1>
+            <p>We would love to get to know you, Hear about your ideas and execute the fuck out of them bitch. We will elevate your company to levels you couldnever imagine. We will make you look so fly your competition will sink into a deep depression wondering what they've been doing all this time.</p>
+        </div>
     </div>
-    
-</div>
-    
-    
-<!-- load jquery -->
+
+    <!-- Contact page content -->
+
+    <div class="col-md-10 wrapper contact-wrapper">
+        <div class="col-md-8 contact-form-box">
+            <div class="contact-form-holder">
+                <h2>Send us a message</h2>
+
+                <form action="&lt;?php $_SERVER['../PHP_SELF'] ?&gt;" method="post">
+                    <div class="form-name-input">
+                        <label>Name</label>
+                        <input type="text" name="name" id="name" placeholder="Full name">
+                    </div>
+                    <div class="form-email-input">
+                        <label>Email</label>
+                        <input type="text" name="email" id="email" placeholder="Write your email">
+                    </div>
+
+                    <div class="form-phone-input">
+                        <label>Phone</label>
+                        <input type="text" name="name" id="name" placeholder="Phone number">
+                    </div>
+
+                    <div class="form-company-input">
+                        <label>Company</label>
+                        <input type="text" name="email" id="email" placeholder="Company name">
+                    </div>
+
+                    <div class="form-message-input">
+                        <label>Message</label>
+                        <textarea class="msg" type="text" name="msg" placeholder="Write your message"></textarea>
+                    </div>
+
+                    <div class="form-submit-input">
+                        <input class="button" name="send" type="submit" value="Send message">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="col-md-7 contact-form-img"></div>
+    </div>
+
+    <div class="socials-bar">
+        LEMON.NTWRK INFO@LEMON.NETWORK
+    </div>
+
+
+
+    <!-- load jquery -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 

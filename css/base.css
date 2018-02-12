@@ -25,6 +25,11 @@ body a:hover {
     color: #aaa;
 }
 
+.wrapper {
+    margin-top: 50px;
+    margin-bottom: 45px;
+}
+
 .button-area .button {
     display: inline-block;
     padding: 10px;
@@ -166,7 +171,8 @@ header {
 
     top: 0;
     width: 100%;
-    z-index: 100;
+    /*    z-index: 100;*/
+    z-index: 999;
     /*    max-width: 1250px !important;*/
 }
 
@@ -176,7 +182,7 @@ header {
     padding: .5rem 1rem 0rem 0rem!important;
 }
 
-.navbar { 
+.navbar {
     padding: .5rem .0rem 0rem 0rem!important;
 }
 
@@ -467,4 +473,168 @@ header ul li a:hover {
     background-image: -webkit-linear-gradient(left, #FFDE13, transparent);
     background-image: -moz-linear-gradient(left, #FFDE13, transparent);
     background-image: -o-linear-gradient(left, #FFDE13, transparent);
+}
+
+
+
+
+
+
+
+
+
+/* ==================== CONTACT PAGE ====================*/
+
+body.contact {
+    background-image: url("../assets/backgrounds/husky.jpg");
+    background-repeat: no-repeat;
+    background-size: 160%;
+    background-position: center center;
+}
+
+.small-heading {
+    margin-top: 145px;
+    text-align: left;
+}
+
+.small-heading h1::after {
+    content: '';
+    background: orange;
+    width: 100px;
+    height: 5px;
+}
+
+.small-heading p {
+    width: 50%;
+    margin-left: 0px;
+}
+
+.contact-wrapper {
+    background: #111;
+    height: 800px;
+    width: 100%;
+}
+
+.contact-form-box {
+    float: left;
+    height: auto;
+    min-height: 700px;
+    padding: 40px 80px;
+    border: red 1px solid;
+}
+
+.contact-form-box:after {
+    content: '';
+    background: orange;
+    width: 5px;
+    height: 100px;
+}
+
+.contact-form-box h2 {
+    color: #FFDE13;
+    text-align: left;
+}
+
+.contact-form-holder {
+    border: blue 1px solid;
+    width: 100%;
+    height: auto;
+}
+
+.contact-form-img {
+    border: 1px solid orange;
+        background-image: url("../assets/backgrounds/husky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    float: left;
+    margin-top: 375px;
+    z-index: 555;
+    /*    margin-left: -32.5%;*/
+    margin-left: -35%;
+}
+
+
+/* Contact form */
+
+form {
+    margin-top: 60px;
+}
+
+label {
+    float: left;
+    color: #504f4f;
+}
+
+input,
+textarea {
+    /*width: 100%;*/
+    width: 88%;
+    display: block;
+    height: 45px;
+    text-align: left;
+    margin-bottom: 30px;
+    font-size: 18.5px;
+    padding-bottom: 10px;
+    resize: none;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    background: transparent;
+    border-bottom: 1px #504f4f solid;
+}
+
+textarea {
+    height: 180px;
+}
+
+.form-name-input,
+.form-email-input,
+.form-phone-input,
+.form-company-input {
+    width: 41 %;
+    margin: 0;
+    float: left;
+    margin-left: 20.5px;
+    margin-right: 20.5px;
+}
+
+.form-message-input,
+.form-submit-input {
+    width: 45%;
+    margin-left: 20.5px;
+    margin-right: 20.5px;
+}
+
+input[placeholder],
+textarea[placeholder] {
+    color: #fff;
+}
+
+input::placeholder {
+    color: #fff;
+}
+
+textarea::placeholder {
+    color: #fff;
+}
+
+input.button {
+    color: #111;
+    text-align: center;
+    background-image: linear-gradient(to right, #ff9600 0%, #F8e71c 51%, #FFDE13 100%);
+    border-radius: 8px;
+    transition: 0.5s;
+    background-size: 200% auto;
+    /*    box-shadow: 0 0 20px #222;*/
+    cursor: pointer;
+    padding: 0;
+    width: 60%;
+    font-size: 0.9rem;
+    height: 35px;
+}
+
+input.button:hover {
+    background-position: right center;
 }
