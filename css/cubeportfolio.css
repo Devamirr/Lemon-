@@ -2239,7 +2239,7 @@
     outline: 0 none; }
 
 .cbp-popup-lightbox {
-  background: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.97);
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -2262,8 +2262,39 @@
   max-width: 100%;
   width: 100%; }
 
+.cbp-popup-lightbox {
+  transition: all 300ms ease;
+  -webkit-animation: fade-in-up 1s; /* Safari 4+ */
+  -moz-animation:    fade-in-up 1s; /* Fx 5+ */
+  -o-animation:      fade-in-up 1s; /* Opera 12+ */
+  animation:         fade-in-up 1s; /* IE 10+, Fx 29+ */
+}
+
+@-webkit-keyframes fade-in-up {
+  0%   { opacity: 0; top: -1200px; }
+  80%   { opacity: 1; }
+  100% { top: 0px; }
+}
+@-moz-keyframes fade-in-up {
+  0%   { opacity: 0; top: -1200px;}
+  80%   { opacity: 1; }
+  100% { top: 0px;}
+}
+@-o-keyframes fade-in-up {
+  0%   { opacity: 0; top: -1200px;}
+  80%   { opacity: 1; }
+  100% { top: 0px;}
+}
+@keyframes fade-in-up {
+  0%   { opacity: 0; top: -1200px;}
+  80%   { opacity: 1; }
+  100% { top: 0px;}
+}
+
+
 .cbp-popup-lightbox .cbp-popup-content {
-  display: flex; }
+  display: flex; 
+}
 
 .cbp-popup-singlePage .cbp-popup-content {
   position: relative;
@@ -2311,7 +2342,9 @@
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6); }
 
 .cbp-popup-lightbox-img[data-action] {
-  cursor: pointer; }
+  cursor: pointer; 
+  transition: all 300ms ease;
+}
 
 .cbp-popup-lightbox-isIframe .cbp-popup-content {
   width: 100%;
@@ -2388,6 +2421,8 @@
   80%   { opacity: 0; }
   100% { opacity: 1; }
 }
+
+
 
 .cbp-popup-singlePage .cbp-popup-navigation {
   position: relative;
@@ -2558,7 +2593,8 @@
   display: block; }
 
 .cbp-popup-transitionend {
-  overflow-y: scroll; }
+  overflow-y: scroll; 
+}
 
 .cbp-popup-singlePage {
   left: 100%;
@@ -3725,21 +3761,30 @@
     height: 100%;
 }
 
-.maximize-edit { 
+.icon-edit { 
     font-size: 20px!important;
     color: #ffde13;
     transition: all 300ms ease;
 }
 
-.maximize-edit:hover {  
+.icon-edit:hover {  
     color: #1d1d1c;
 }
 
-.maximize-box { 
-    right: 20px; 
+.icon-box { 
     width: 20px;
     display: block;
     position: absolute;
-    right: 20px;
-    top: 20px;
+    right: 15px;
+    top: 10px;
+}
+
+#splashscreen {
+    position:fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    width:100%;
+    background-color: #1d1d1c;
+    z-index:9999;
 }

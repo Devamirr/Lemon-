@@ -69,3 +69,13 @@ $(window).scroll(function () {
         },
     });
 })(jQuery, window, document);
+
+
+$('.enter_link').click(function () {
+    $(this).parent('#splashscreen').slideUp(500);
+});
+
+if (!sessionStorage.isVisited) {
+    sessionStorage.isVisited = 'true'
+    $(this).parent('#splashscreen').slideUp(500);
+  }
