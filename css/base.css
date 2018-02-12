@@ -205,7 +205,7 @@ header ul li a {
 header ul li a:hover {
     color: #fff;
     text-decoration: none;
-    border-bottom: 1px solid #FFDE13;
+    border-bottom: 3px solid #FFDE13;
 }
 
 .active a {
