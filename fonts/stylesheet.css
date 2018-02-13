@@ -46,3 +46,24 @@
     font-style: normal;
 
 }
+
+/* normal font */
+
+@font-face {
+    font-family: 'cera-med-ital';
+    src: url('cera_gr_medium_italic-webfont.woff2') format('woff2'),
+         url('cera_gr_medium_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'cera-med';
+    src: url('cera_gr_medium-webfont.woff2') format('woff2'),
+         url('cera_gr_medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

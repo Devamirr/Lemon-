@@ -8,27 +8,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="http://oss.maxcdn.com/semantic-ui/2.1.6/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 
     <!-- lemon css -->
+
+    <link rel="stylesheet" type="text/css" href="css/cubeportfolio.css">
     <link rel="stylesheet" type="text/css" href="css/base.css">
 
+
     <!-- Responsive css -->
-    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <!--<link rel="stylesheet" type="text/css" href="css/responsive.css">-->
 
     <!-- Cera font -->
     <link rel="stylesheet" type="text/css" href="fonts/stylesheet.css">
 
-    <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    
-     <script src="js/base.js"></script>
+
+
+
 
 </head>
 
-<body>
+<body style="">
+
+    <!--  splashscreen  -->
+
+    <div id="splashscreen" class="container-fluid">
+       
+       
+       .
+        <h2>LEMON </h2>
+        Take a look at our new products, blablabla
+
+        <a href="#" class="enter_link">Enter on the website</a>
+    </div>
+
+
+
     <!-- Header -->
     <header class="header">
         <nav class="navbar navbar-default">
@@ -40,7 +56,7 @@
 -->
                 <div id="navbar" class="navbar-collapse">
                     <ul class="nav navbar-nav">
-                        <li class=""><a href="#home">WORK</a></li>
+                        <li class=""><a href="index.html">WORK</a></li>
                         <li><a href="#about">ABOUT</a></li>
                         <li><a href="contact.html">CONTACT</a></li>
                     </ul>
@@ -49,192 +65,243 @@
         </nav>
     </header>
 
-    <div class="container-fluid">
-        <div class="sidda col-lg-2 col-md-2 col-sm-2 col-xs-2">
-            <div class="container-fluid">
-                <div class="row">
-                    <nav class="navbar navbar-default">
-                        <div class="container-fluid">
-                            <!--
-                <div id="navbar-brand" class="navbar-header">
-                    <a class="navbar-brand" href="#">Marley Riedewald</a>
-                </div>
--->
-                            <div id="navbar" class="navbar-collapse">
-                                <ul class="nav navbar-nav">
-                                    <li class=""><a href="#home">Logo</a></li>
-                                    <li><a href="#about">UX / UI</a></li>
-                                    <li><a href="#projects">Print</a></li>
-                                    <li><a href="#projects">Branding</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <div class="container-fluid container-edit col-md-8">
 
-            <div class="row page-heading" >
+
+
+    <div class="container-fluid">
+
+        <div class="container-fluid container-edit col-md-12">
+
+
+
+            <div class="row page-heading">
                 <h1 class="back-fade">OUR WORK</h1>
             </div>
 
-            <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <div class="col-md-14 project post">
-                        <img src="img/second.jpg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
+            <ul id="js-filters-masonry-projects" class="cbp-l-filters-buttonCenter">
+                <li data-filter="*" class="cbp-filter-item-active cbp-filter-item">
+                    <p class="side-nav-tekst">All</p>
+                    <span class="cbp-filter-counter"></span>
+                </li>
+                <li data-filter=".identity" class="cbp-filter-item">
+                    <p class="side-nav-tekst">Identity</p>
+                    <span class="cbp-filter-counter"></span>
+                </li>
+                <li data-filter=".web-design" class="cbp-filter-item">
+                    <p class="side-nav-tekst">Web Design</p>
+                    <span class="cbp-filter-counter"></span>
+                </li>
+                <li data-filter=".graphic" class="cbp-filter-item">
+                    <p class="side-nav-tekst">Graphic</p>
+                    <span class="cbp-filter-counter"></span>
+                </li>
+                <li data-filter=".logos" class="cbp-filter-item">
+                    <p class="side-nav-tekst">Logo</p>
+                    <span class="cbp-filter-counter"></span>
+                </li>
+                <li data-filter=".logos, .graphic" class="cbp-filter-item">
+                    <p class="side-nav-tekst">Logo Graphic</p>
+                    <span class="cbp-filter-counter"></span>
+                </li>
+            </ul>
+
+
+
+
+            <div id="js-grid-masonry-projects" class="cbp cbp-l-grid-masonry-projects">
+                <div class="cbp-item graphic">
+                    <div class="cbp-caption project post">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="http://scriptpie.com/cubeportfolio/img/?i=380x370/6b4d10" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap ">
+                            <div class="cbp-l-caption-alignCenter overlay ">
+                                <a href="http://scriptpie.com/cubeportfolio/img/?i=1200x900/2ad2f3" class="cbp-lightbox icon-box" data-title="Dashboard<br>by Paul Flavius Nechita">
+                                   <i class="angle up icon icon-edit"></i>
+                                   </a>
+                                <a href="work/project1.html" class="overlayLink cbp-singlePage">
+                                    <div class="cbp-l-caption-body text">
+                                        <!--                                    <a href="work/project1.html" class="cbp-singlePage arrow right cbp-l-caption-buttonLeft" rel="nofollow"></a>-->
+
+                                        <div class="left-project-name">
+                                            <a href="work/project1.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title" rel="nofollow">
+                                                <h1 class="project-name">BeenTo gang</h1>
+                                            </a>
+                                        </div>
+                                        <div class="right-project-description">
+                                            <p class="project-type">web design</p>
+                                        </div>
                                     </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>
-                    <div class="col-md-14 project post">
-                        <img src="img/fourth.jpeg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-14 project post">
-                        <img src="img/third.jpg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <div class="col-md-14 project post">
-                        <img src="img/third.jpg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-14 project post">
-                        <img src="img/fourth.jpeg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-14 project post">
-                        <img src="img/second.jpg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
+
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                    <div class="col-md-14 project post">
-                        <img src="img/second.jpg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
+                <div class="cbp-item web-design logos">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="http://scriptpie.com/cubeportfolio/img/?i=380x360/2dcd64" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap overlay">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="work/project2.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
+                                    <a href="http://scriptpie.com/cubeportfolio/img/?i=1200x900/8d285b" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="World Clock<br>by Paul Flavius Nechita">view larger</a>
                                 </div>
                             </div>
-                        </a>
+                        </div>
                     </div>
-                    <div class="col-md-14 project post">
-                        <img src="img/third.jpg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-md-14 project post">
-                        <img src="img/fourth.jpeg" alt="Avatar" class="image">
-                        <a href="detail.html">
-                            <div class="overlay">
-                                <div class="text">
-                                    <div class="left-project-name">
-                                        <h1 class="project-name">SHIFT</h1>
-                                    </div>
-                                    <div class="right-project-description">
-                                        <p class="project-type">UX DESIGN</p>
-                                        <p>12/11 Max Potze</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
+                    <a href="work/project2.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title" rel="nofollow">World Clock</a>
+                    <div class="cbp-l-grid-masonry-projects-desc">logos / web design</div>
                 </div>
+                <div class="cbp-item graphic logos">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="http://scriptpie.com/cubeportfolio/img/?i=380x360/8ef4af" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap overlay">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="work/project3.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
+                                    <a href="http://vimeo.com/14912890" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="To-Do Dashboard<br>by Tiberiu Neamu">view video</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="work/project3.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title" rel="nofollow">To-Do Dashboard</a>
+                    <div class="cbp-l-grid-masonry-projects-desc">graphic / logos</div>
+                </div>
+                <div class="cbp-item identity web-design">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="http://scriptpie.com/cubeportfolio/img/?i=380x570/0fb6fc" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap overlay">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="work/project4.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
+                                    <a href="http://scriptpie.com/cubeportfolio/img/?i=1200x900/701d46" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="WhereTO App<br>by Tiberiu Neamu">view larger</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="work/project5.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title" rel="nofollow">WhereTO App</a>
+                    <div class="cbp-l-grid-masonry-projects-desc">web design / identity</div>
+                </div>
+                <div class="cbp-item web-design graphic">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="http://scriptpie.com/cubeportfolio/img/?i=380x570/3329fb" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap overlay">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="work/project5.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
+                                    <a href="http://scriptpie.com/cubeportfolio/img/?i=1200x900/f2adde" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Events and  More<br>by Tiberiu Neamu">view larger</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="work/project4.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title" rel="nofollow">Events and More</a>
+                    <div class="cbp-l-grid-masonry-projects-desc">web design / graphic</div>
+                </div>
+                <div class="cbp-item identity web-design">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="http://scriptpie.com/cubeportfolio/img/?i=380x360/0ddda1" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap overlay">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="work/project6.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
+                                    <a href="http://scriptpie.com/cubeportfolio/img/?i=1200x900/6d3898" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Ski * Buddy<br>by Tiberiu Neamu">view larger</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="work/project6.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title" rel="nofollow">Ski * Buddy</a>
+                    <div class="cbp-l-grid-masonry-projects-desc">identity / web design</div>
+                </div>
+                <div class="cbp-item graphic logos">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="http://scriptpie.com/cubeportfolio/img/?i=380x360/296f2c" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap overlay">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="work/project7.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
+                                    <a href="http://scriptpie.com/cubeportfolio/img/?i=1200x900/89ca22" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Seemple* Music<br>by Tiberiu Neamu">view larger</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="work/project7.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title" rel="nofollow">Seemple* Music</a>
+                    <div class="cbp-l-grid-masonry-projects-desc">graphic / logos</div>
+                </div>
+                <div class="cbp-item identity graphic">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="http://scriptpie.com/cubeportfolio/img/?i=380x360/2cd735" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap overlay">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="work/project8.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
+                                    <a href="http://www.youtube.com/watch?v=Bu9OiDmxCrQ" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Remind~Me More<br>by Tiberiu Neamu">view video</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="work/project8.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title" rel="nofollow">Remind~Me More</a>
+                    <div class="cbp-l-grid-masonry-projects-desc">identity / graphic</div>
+                </div>
+                <div class="cbp-item web-design graphic">
+                    <div class="cbp-caption">
+                        <div class="cbp-caption-defaultWrap">
+                            <img src="http://scriptpie.com/cubeportfolio/img/?i=380x570/0d87e0" alt="">
+                        </div>
+                        <div class="cbp-caption-activeWrap overlay">
+                            <div class="cbp-l-caption-alignCenter">
+                                <div class="cbp-l-caption-body">
+                                    <a href="work/project9.html" class="cbp-singlePage cbp-l-caption-buttonLeft" rel="nofollow">more info</a>
+                                    <a href="https://www.ted.com/talks/andrew_bastawrous_get_your_next_eye_exam_on_a_smartphone" class="cbp-lightbox cbp-l-caption-buttonRight" data-title="Workout Buddy<br>by Tiberiu Neamu">view video</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="work/project9.html" class="cbp-singlePage cbp-l-grid-masonry-projects-title" rel="nofollow">Workout Buddy</a>
+                    <div class="cbp-l-grid-masonry-projects-desc">web design / graphic</div>
+                </div>
+
             </div>
+
+            <div id="js-loadMore-masonry-projects" class="cbp-l-loadMore-button">
+                <a href="work/loadMore.html" class="cbp-l-loadMore-link" rel="nofollow">
+            <span class="cbp-l-loadMore-defaultText">LOAD MORE</span>
+            <span class="cbp-l-loadMore-loadingText">LOADING...</span>
+            <span class="cbp-l-loadMore-noMoreLoading">NO MORE WORKS</span>
+        </a>
+            </div>
+
+
+
         </div>
     </div>
 
 
+
+    <!-- load jquery -->
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- load cubeportfolio -->
+    <script type="text/javascript" src="js/jquery.cubeportfolio.min.js"></script>
+
+    <!-- init cubeportfolio -->
+    <script src="js/base.js"></script>
+
 </body>
+
 
 </html>
