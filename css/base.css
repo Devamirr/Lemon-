@@ -243,16 +243,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', e
 }
 
 
-
-
-
-
-
-
-
-
-
-
 .overlay {
 
 }
@@ -280,3 +270,6 @@ width: 5px;
   background-image: -moz-linear-gradient(left, #FFDE13, transparent);
   background-image: -o-linear-gradient(left, #FFDE13, transparent);
 }
+
+
+/* contact */
