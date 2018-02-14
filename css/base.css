@@ -1,130 +1,5 @@
 /* ==================== GENERAL ====================*/
 
-*,
-*:before,
-*:after {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
-
-body {
-    font-family: Arial, "Hiragino Kaku Gothic Pro W3", Meiryo, sans-serif;
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-}
-
-body a,
-body a:visited {
-    color: #ccc;
-    text-decoration: none;
-}
-
-body a:hover {
-    color: #aaa;
-}
-
-.wrapper {
-    margin-top: 50px;
-    margin-bottom: 45px;
-}
-
-.button-area .button {
-    display: inline-block;
-    padding: 10px;
-    margin: 30px 5px;
-    background-color: rgba(255, 255, 255, 0.2);
-    border-radius: 3px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.button-area .button:hover {
-    background-color: rgba(255, 255, 255, 0.32);
-}
-
-.button-area .button.active {
-    background-color: rgba(255, 255, 255, 0.52);
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6) inset;
-}
-
-.button-area input[type="checkbox"] {
-    display: none;
-}
-
-#mnsry_container {
-    position: relative;
-}
-
-#mnsry_container:hover img {
-    opacity: 0.28;
-}
-
-#mnsry_container article {
-    width: 33.3%;
-    min-height: 200px;
-    overflow: hidden;
-    cursor: pointer;
-    opacity: 0;
-}
-
-#mnsry_container article h1 {
-    position: absolute;
-    top: 46%;
-    left: 0;
-    width: 100%;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
-    transition: all 1.2s;
-    z-index: 1;
-}
-
-#mnsry_container article img {
-    display: block;
-    width: 100%;
-    transition: all 0.8s;
-}
-
-#mnsry_container article:hover h1 {
-    transform: translate3d(0, 18px, 0) scale(1.2, 0.4);
-    opacity: 0;
-}
-
-#mnsry_container article:hover img {
-    opacity: 1;
-    transform: scale(1.04);
-}
-
-#loading_msg {
-    position: fixed;
-    top: 48%;
-    width: 100%;
-    z-index: -1;
-}
-
-@media (max-width: 860px) {
-    #mnsry_container article {
-        width: 50%;
-        min-height: 150px;
-    }
-}
-
-@media (max-width: 667px) {
-    #mnsry_container article {
-        width: 100%;
-        min-height: 220px;
-    }
-}
-
-
-* {
-    margin: 0 auto;
-    padding: 0;
-    max-width: 100%;
-}
-
-
-
 body {
     background: #1D1D1C;
     /*    font-family: 'ceragr-blackitaliuploadedfile';*/
@@ -152,13 +27,15 @@ col-xs-4 {
     display: block;
     /*border: 1px solid #ffffff;*/
     border-radius: 3px;
+    margin-bottom: 20px;
+    background-color: #dadfe3;
 }
 
 h1,
 h2,
 p,
 a {
-    font-family: 'cera-med';
+    font-family: 'ceragr-bolduploaded_file';
 }
 
 /* ==================== HEADER ====================*/
@@ -171,27 +48,19 @@ header {
 
     top: 0;
     width: 100%;
-    /*    z-index: 100;*/
-    z-index: 999;
+    z-index: 9999;
     /*    max-width: 1250px !important;*/
 }
 
 #navbar {
     flex-basis: 50%;
     margin-right: -16px;
-    padding: .5rem 1rem 0rem 0rem!important;
-}
-
-.navbar {
-    padding: .5rem .0rem 0rem 0rem!important;
 }
 
 .navbar-nav {
     flex-direction: unset;
     float: right;
 }
-
-
 
 header li {
     float: left;
@@ -205,13 +74,12 @@ header ul li a {
     padding: 14px 16px;
     border-bottom: 1px solid transparent;
     font-size: 15px;
-    height: 65px;
 }
 
 header ul li a:hover {
     color: #fff;
     text-decoration: none;
-    border-bottom: 3px solid #FFDE13;
+    border-bottom: 1px solid #FFDE13;
 }
 
 .active a {
@@ -220,33 +88,11 @@ header ul li a:hover {
 
 .active a {
     color: red;
-}
-
-.navbar-collapse {
-    position: relative;
-}
-
-.navbar-collapse:after {
-    display: block;
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 1px;
-    width: 100%;
-    background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(120, 120, 120, 1) 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(120, 120, 120, 1) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(120, 120, 120, 1) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#787878', GradientType=1);
-    /* IE6-9 */
 }
 
 /* ==================== OUR WORK ====================*/
 
-.back-fade {
+.back-fade { 
     position: fixed;
     display: block;
     margin-left: 14px;
@@ -263,7 +109,7 @@ header ul li a:hover {
 /* ---------- sidebar heading ---------- */
 
 .row.page-heading {
-    margin-top: 145px;
+    margin-top: 67px;
     height: 120px;
     color: #fff;
 }
@@ -301,100 +147,56 @@ header ul li a:hover {
 
 /* ---------- Slide in overlay animation ---------- */
 
-.grid {
-    text-align: center;
-    max-width: 95vw;
-    margin: 2vw auto;
-}
-
-
-/* Step 3: how big should the gap be between grid items? remember that the total gap between two items would be double what you set here since both would have that amount set as their individual padding. Also add box-sizing:border-box to make sure the padding doesn't affect the total widh of the item */
-
-.grid-item {
-    padding: 0px 5px;
-    box-sizing: border-box;
-    display: inline;
+.project {
+    position: relative;
+    width: 100%;
     transition: 200ms ease-in;
 }
 
-
-/* Step 4: Add media queries (subjective) to make the whole grid resposive. */
-
-@media (min-width: 500px) {
-    .grid-item {
-        width: 50%;
-    }
-}
-
-@media (min-width: 1000px) {
-    .grid-item {
-        width: 33.333%;
-    }
-}
-
-@media (min-width: 1700px) {
-    .grid-item {
-        width: 25%;
-    }
-}
-
-@media (min-width: 2100px) {
-    .grid-item {
-        width: 20%;
-    }
-}
-
-.grid-item:hover {
+.project:hover {
     cursor: pointer;
-    -webkit-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.75);
-    */ -moz-box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75); */
+    -moz-box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 7px 2px rgba(0,0,0,0.25);
 }
 
 .image {
     display: block;
     width: 100%;
     height: auto;
-    margin: 0px;
-    padding: 0px;
 }
 
 .overlay {
-    position: absolute;
+position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+80&0+0,0.65+80 */
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 80%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 80%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.65) 80%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000', GradientType=0);
-    /* IE6-9 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.65) 80%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 80%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 80%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
     overflow: hidden;
     width: 100%;
     height: 0;
     transition: .5s ease;
 }
 
-.post:hover .overlay {
+.project:hover .overlay {
     height: 100%;
 }
 
 .text {
     color: red;
-    font-size: 1rem;
+    font-size: 20px;
     position: absolute;
-    bottom: 4%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
     text-align: center;
-    width: 100%;
-    padding: 0px 20px;
+    width: 80%;
+/*    width: 59%;*/
 
 }
 
@@ -407,7 +209,6 @@ header ul li a:hover {
     color: #FFDE13;
     margin-bottom: 0px;
     letter-spacing: 3px;
-    text-transform: uppercase;
 }
 
 .overlay h1.project-name {
@@ -421,23 +222,16 @@ header ul li a:hover {
     position: relative;
     display: block;
     WORD-BREAK: break-all;
-    font-size: 1rem;
-    text-transform: uppercase;
-    transition: all 300ms;
+    font-size: 2rem;
 }
-
-.overlay h1.project-name:hover {
-    color: #f9cc00;
-}
-
 
 .left-project-name {
     width: 50%;
+/*    height: auto;*/
+/*
+    background: green;
     float: left;
-    height: auto;
-    float: left;
-    text-align: left;
-
+*/
 }
 
 .right-project-description {
@@ -445,196 +239,37 @@ header ul li a:hover {
     height: auto;
     float: left;
     text-align: left;
+    padding-left: 10px;
 }
 
-.overlay {}
 
-.overlay:before,
-.bot-left:after {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: -3px;
+.overlay {
+
+}
+
+.overlay:before, .bot-left:after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: -3px;
 }
 
 .overlay:before {
-    top: 0px;
-    width: 5px;
-    background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#FFDE13), to(transparent));
-    background-image: -webkit-linear-gradient(transparent, #FFDE13);
-    background-image: -moz-linear-gradient(transparent, #FFDE13);
-    background-image: -o-linear-gradient(transparent, #FFDE13);
+  top: 0px;
+width: 5px;
+  background-image: -webkit-gradient(linear, 0 100%, 0 0, from(#FFDE13), to(transparent));
+  background-image: -webkit-linear-gradient(transparent, #FFDE13);
+  background-image: -moz-linear-gradient(transparent, #FFDE13);
+  background-image: -o-linear-gradient(transparent, #FFDE13);
 }
-
 .overlay:after {
-    right: -3px;
-    height: 3px;
-    background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#FFDE13), to(transparent));
-    background-image: -webkit-linear-gradient(left, #FFDE13, transparent);
-    background-image: -moz-linear-gradient(left, #FFDE13, transparent);
-    background-image: -o-linear-gradient(left, #FFDE13, transparent);
+  right: -3px;
+  height: 3px;
+  background-image: -webkit-gradient(linear, 0 0, 100% 0, from(#FFDE13), to(transparent));
+  background-image: -webkit-linear-gradient(left, #FFDE13, transparent);
+  background-image: -moz-linear-gradient(left, #FFDE13, transparent);
+  background-image: -o-linear-gradient(left, #FFDE13, transparent);
 }
 
 
-
-
-
-
-
-
-
-/* ==================== CONTACT PAGE ====================*/
-
-body.contact {
-    background-image: url("../assets/backgrounds/husky.jpg");
-    background-repeat: no-repeat;
-    background-size: 160%;
-    background-position: center center;
-}
-
-.small-heading {
-    margin-top: 145px;
-    text-align: left;
-}
-
-.small-heading h1::after {
-    content: '';
-    background: orange;
-    width: 100px;
-    height: 5px;
-}
-
-.small-heading p {
-    width: 50%;
-    margin-left: 0px;
-}
-
-.contact-wrapper {
-    background: #111;
-    height: 800px;
-    width: 100%;
-}
-
-.contact-form-box {
-    float: left;
-    height: auto;
-    min-height: 700px;
-    padding: 40px 80px;
-    border: red 1px solid;
-}
-
-.contact-form-box:after {
-    content: '';
-    background: orange;
-    width: 5px;
-    height: 100px;
-}
-
-.contact-form-box h2 {
-    color: #FFDE13;
-    text-align: left;
-}
-
-.contact-form-holder {
-    border: blue 1px solid;
-    width: 100%;
-    height: auto;
-}
-
-.contact-form-img {
-    border: 1px solid orange;
-        background-image: url("../assets/backgrounds/husky.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 400px;
-    float: left;
-    margin-top: 375px;
-    z-index: 555;
-    /*    margin-left: -32.5%;*/
-    margin-left: -35%;
-}
-
-
-/* Contact form */
-
-form {
-    margin-top: 60px;
-}
-
-label {
-    float: left;
-    color: #504f4f;
-}
-
-input,
-textarea {
-    /*width: 100%;*/
-    width: 88%;
-    display: block;
-    height: 45px;
-    text-align: left;
-    margin-bottom: 30px;
-    font-size: 18.5px;
-    padding-bottom: 10px;
-    resize: none;
-    border-left: none;
-    border-right: none;
-    border-top: none;
-    background: transparent;
-    border-bottom: 1px #504f4f solid;
-}
-
-textarea {
-    height: 180px;
-}
-
-.form-name-input,
-.form-email-input,
-.form-phone-input,
-.form-company-input {
-    width: 41 %;
-    margin: 0;
-    float: left;
-    margin-left: 20.5px;
-    margin-right: 20.5px;
-}
-
-.form-message-input,
-.form-submit-input {
-    width: 45%;
-    margin-left: 20.5px;
-    margin-right: 20.5px;
-}
-
-input[placeholder],
-textarea[placeholder] {
-    color: #fff;
-}
-
-input::placeholder {
-    color: #fff;
-}
-
-textarea::placeholder {
-    color: #fff;
-}
-
-input.button {
-    color: #111;
-    text-align: center;
-    background-image: linear-gradient(to right, #ff9600 0%, #F8e71c 51%, #FFDE13 100%);
-    border-radius: 8px;
-    transition: 0.5s;
-    background-size: 200% auto;
-    /*    box-shadow: 0 0 20px #222;*/
-    cursor: pointer;
-    padding: 0;
-    width: 60%;
-    font-size: 0.9rem;
-    height: 35px;
-}
-
-input.button:hover {
-    background-position: right center;
-}
+/* contact */
