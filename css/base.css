@@ -683,6 +683,7 @@ body.contact {
     text-align: left;
     -webkit-animation: left-fade-in 3s linear normal forwards;
     animation: left-fade-in 3s linear normal forwards;
+    margin-bottom: 130px;
 }
 
 .small-heading h1::after {
@@ -693,8 +694,12 @@ body.contact {
 }
 
 .small-heading p {
-    width: 50%;
+/*    width: 65%;*/
+    width: 68%;
     margin-left: 0px;
+    float: left;
+    font-size: 0.9rem;
+
 }
 
 .contact-wrapper {
