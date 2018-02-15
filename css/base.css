@@ -684,6 +684,7 @@ body.contact {
     -webkit-animation: left-fade-in 3s linear normal forwards;
     animation: left-fade-in 3s linear normal forwards;
     margin-bottom: 130px;
+    max-width: 46%;
 }
 
 .small-heading h1::after {
