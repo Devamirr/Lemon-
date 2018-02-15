@@ -8,6 +8,10 @@
     margin: 0;
 }
 
+*:focus {
+    outline: none;
+}
+
 body {
     font-family: Arial, "Hiragino Kaku Gothic Pro W3", Meiryo, sans-serif;
     background-color: #333;
@@ -526,7 +530,6 @@ body.contact {
     min-height: 700px;
     padding: 40px 80px;
     /*    border: red 1px solid;*/
-   
     position: relative;
 }
 
@@ -537,10 +540,11 @@ body.contact {
     height: 100px;
     display: block;
     margin-left: -85px;
-    margin-top: -35px;
-/*    z-index: 1;*/
+    /*    margin-top: -35px;*/
+    margin-top: -55px;
+    /*    z-index: 1;*/
     position: absolute;
-    
+
     z-index: -1;
 }
 
@@ -563,10 +567,13 @@ body.contact {
     background-position: center center;
     height: 400px;
     float: left;
-    margin-top: 375px;
+    /*    margin-top: 375px;*/
+    margin-top: 402px;
     z-index: 555;
     /*    margin-left: -32.5%;*/
-    margin-left: -35%;
+    /*    margin-left: -35%;*/
+    margin-left: -40%;
+    width: 50%;
 }
 
 
@@ -596,7 +603,11 @@ textarea {
     border-right: none;
     border-top: none;
     background: transparent;
-    border-bottom: 1px #504f4f solid;
+    /*    border-bottom: 1px #504f4f solid;*/
+    border-bottom: none;
+
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 textarea {
@@ -606,19 +617,52 @@ textarea {
 .form-name-input,
 .form-email-input,
 .form-phone-input,
-.form-company-input {
+.form-company-input,
+.form-message-input {
     width: 41 %;
     margin: 0;
     float: left;
     margin-left: 20.5px;
     margin-right: 20.5px;
+    padding-bottom: 10px;
+    margin-bottom: 40px;
+}
+
+.form-name-input:after,
+.form-email-input:after,
+.form-phone-input:after,
+.form-company-input:after,
+.form-message-input:after {
+    transition: all 300ms ease;
+    content: '';
+    background: #504f4f;
+    width: 98%;
+    float: right;
+    height: 1px;
+    display: block;
+}
+
+.form-message-input:after {
+    width: 98%;
+}
+
+.form-name-input:hover:after,
+.form-email-input:hover:after,
+.form-phone-input:hover:after,
+.form-company-input:hover:after,
+.form-message-input:hover:after {
+    background: #FFDE13;
 }
 
 .form-message-input,
 .form-submit-input {
-    width: 45%;
+    width: 50%;
     margin-left: 20.5px;
     margin-right: 20.5px;
+}
+
+.form-message-input {
+    max-width: 261px;
 }
 
 input[placeholder],
@@ -651,4 +695,46 @@ input.button {
 
 input.button:hover {
     background-position: right center;
+}
+
+input::-webkit-input-placeholder {
+    color: #999;
+}
+
+input:focus::-webkit-input-placeholder {
+    color: #ededed;
+}
+/* Firefox < 19 */
+input:-moz-placeholder {
+    color: #ededed;
+}
+input:focus:-moz-placeholder {
+    color: #ededed;
+}
+/* Firefox > 19 */
+input::-moz-placeholder {
+    color: #999;
+}
+input:focus::-moz-placeholder {
+    color: #ededed;
+}
+
+/* Internet Explorer 10 */
+input:-ms-input-placeholder {
+    color: #999;
+}
+input:focus:-ms-input-placeholder {
+    color: #ededed;
+}
+
+/* Socials bar/footer */
+
+.socials-bar {
+    margin: 0 auto;
+    height: 200px;
+    line-height: 10.5;
+}
+
+.socials-bar span {
+    margin-left: 60px;
 }
