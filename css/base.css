@@ -279,6 +279,7 @@ header ul li a:hover {
     animation-delay: 9s;
 }
 
+/* ------------intro screen------------- */
 
 #splashscreen {
     position: fixed;
@@ -663,13 +664,6 @@ header ul li a:hover {
 }
 
 
-
-
-
-
-
-
-
 /* ==================== CONTACT PAGE ====================*/
 
 body.contact {
@@ -681,11 +675,14 @@ body.contact {
 
 .contact header {
     background: transparent;
+    
 }
 
 .small-heading {
     margin-top: 145px;
     text-align: left;
+    -webkit-animation: left-fade-in 3s linear normal forwards;
+    animation: left-fade-in 3s linear normal forwards;
 }
 
 .small-heading h1::after {
@@ -704,6 +701,8 @@ body.contact {
     /*    background: #111;*/
     height: 800px;
     width: 100%;
+    -webkit-animation: left-fade-in 4s linear normal forwards;
+    animation: left-fade-in 4s linear normal forwards;
 }
 
 .contact-form-box {
@@ -714,6 +713,7 @@ body.contact {
     padding: 40px 80px;
     /*    border: red 1px solid;*/
     position: relative;
+    
 }
 
 .contact-form-box:after {
@@ -757,6 +757,44 @@ body.contact {
     /*    margin-left: -35%;*/
     margin-left: -40%;
     width: 50%;
+    -webkit-animation: fade-inRight 3s linear normal forwards;
+    animation: fade-inRight 3s linear normal forwards;
+    animation-delay: 5s;
+    opacity: 0;
+    transition: all 300ms ease;
+    right: -50px;
+    
+    
+}
+
+
+@keyframes fade-inRight {
+    0% {
+        opacity: 0;
+    }
+    
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+        right: 0px;
+    }
+}
+
+
+@keyframes fade-inLeft {
+    0% {
+        opacity: 0;
+        left: 0;
+    }
+
+
+    100% {
+        opacity: 1;
+        left: 20px;
+    }
 }
 
 
@@ -764,6 +802,9 @@ body.contact {
 
 form {
     margin-top: 60px;
+    -webkit-animation: fade-inLeft 5s linear normal forwards;
+    animation: fade-inLeft 5s linear normal forwards;
+    
 }
 
 label {
