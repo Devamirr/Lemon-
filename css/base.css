@@ -763,7 +763,7 @@ body.contact {
     animation-delay: 5s;
     opacity: 0;
     transition: all 300ms ease;
-    /* right: -50px; */
+     right: -50px; 
     margin-top: 410px;
 }
 
