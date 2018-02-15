@@ -61,42 +61,47 @@
     <!-- Contact page content -->
 
     <div class="col-md-10 wrapper contact-wrapper">
-        <div class="col-md-8 contact-form-box">
-            <div class="contact-form-holder">
-                <h2>Send us a message</h2>
+        <div class="container-fluid col-md-8">
+            <div class="contact-form-box">
+<!--                <div class="col-md-8 contact-form-box">-->
+                <div class="contact-form-holder">
+                    <h2>Send us a message</h2>
 
-                <form action="&lt;?php $_SERVER['../PHP_SELF'] ?&gt;" method="post">
-                    <div class="form-name-input">
-                        <label>Name</label>
-                        <input type="text" name="name" class="nameinput" id="name" placeholder="Full name">
-                    </div>
-                    <div class="form-email-input">
-                        <label>Email</label>
-                        <input type="text" name="email" id="email" placeholder="Write your email">
-                    </div>
+                    <form action="&lt;?php $_SERVER['../PHP_SELF'] ?&gt;" method="post">
+                        <div class="form-name-input">
+                            <label>Name</label>
+                            <input type="text" name="name" class="nameinput" id="name" placeholder="Full name">
+                        </div>
+                        <div class="form-email-input">
+                            <label>Email</label>
+                            <input type="text" name="email" id="email" placeholder="Write your email">
+                        </div>
 
-                    <div class="form-phone-input">
-                        <label>Phone</label>
-                        <input type="text" name="name" id="name" placeholder="Phone number">
-                    </div>
+                        <div class="form-phone-input">
+                            <label>Phone</label>
+                            <input type="text" name="name" id="name" placeholder="Phone number">
+                        </div>
 
-                    <div class="form-company-input">
-                        <label>Company</label>
-                        <input type="text" name="email" id="email" placeholder="Company name">
-                    </div>
+                        <div class="form-company-input">
+                            <label>Company</label>
+                            <input type="text" name="email" id="email" placeholder="Company name">
+                        </div>
 
-                    <div class="form-message-input">
-                        <label>Message</label>
-                        <textarea class="msg" type="text" name="msg" placeholder="Write your message"></textarea>
-                    </div>
+                        <div class="form-message-input">
+                            <label>Message</label>
+                            <textarea class="msg" type="text" name="msg" placeholder="Write your message"></textarea>
+                        </div>
 
-                    <div class="form-submit-input">
-                        <input class="button" name="send" type="submit" value="Send message">
-                    </div>
-                </form>
+                        <div class="form-submit-input">
+                            <input class="button" name="send" type="submit" value="Send message">
+                        </div>
+                    </form>
+                </div>
             </div>
+            <div class="col-md-7 contact-form-img"></div>
+
+
         </div>
-        <div class="col-md-7 contact-form-img"></div>
     </div>
 
     <div class="socials-bar">

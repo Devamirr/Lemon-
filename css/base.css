@@ -675,7 +675,7 @@ body.contact {
 
 .contact header {
     background: transparent;
-    
+
 }
 
 .small-heading {
@@ -713,7 +713,8 @@ body.contact {
     padding: 40px 80px;
     /*    border: red 1px solid;*/
     position: relative;
-    
+    width: 80%;
+
 }
 
 .contact-form-box:after {
@@ -743,28 +744,27 @@ body.contact {
 }
 
 .contact-form-img {
-    /*    border: 1px solid orange;*/
-    background-image: url("../assets/backgrounds/husky.jpg");
+    /* border: 1px solid orange; */
+    background-image: url(../assets/backgrounds/husky.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     height: 400px;
-    float: left;
-    /*    margin-top: 375px;*/
-    margin-top: 402px;
+    float: right;
+    /* margin-top: 375px; */
+    /* margin-top: 402px; */
     z-index: 555;
-    /*    margin-left: -32.5%;*/
-    /*    margin-left: -35%;*/
-    margin-left: -40%;
+/*    margin-left: -32.5%;*/
+    margin-left: -60%;
+    /* margin-left: -40%; */
     width: 50%;
     -webkit-animation: fade-inRight 3s linear normal forwards;
     animation: fade-inRight 3s linear normal forwards;
     animation-delay: 5s;
     opacity: 0;
     transition: all 300ms ease;
-    right: -50px;
-    
-    
+    /* right: -50px; */
+    margin-top: 410px;
 }
 
 
@@ -772,7 +772,7 @@ body.contact {
     0% {
         opacity: 0;
     }
-    
+
     80% {
         opacity: 1;
     }
@@ -804,7 +804,7 @@ form {
     margin-top: 60px;
     -webkit-animation: fade-inLeft 5s linear normal forwards;
     animation: fade-inLeft 5s linear normal forwards;
-    
+
 }
 
 label {
@@ -878,6 +878,14 @@ textarea {
     background: #FFDE13;
 }
 
+.form-name-input:active:after,
+.form-email-input:active:after,
+.form-phone-input:active:after,
+.form-company-input:active:after,
+.form-message-input:active:after {
+    background: orange;
+}
+
 .form-message-input,
 .form-submit-input {
     width: 50%;
@@ -921,33 +929,49 @@ input.button:hover {
     background-position: right center;
 }
 
-input::-webkit-input-placeholder {
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
     color: #999;
 }
 
-input:focus::-webkit-input-placeholder {
+input:focus::-webkit-input-placeholder,
+textarea:focus::-webkit-textarea-placeholder {
     color: #ededed;
 }
+
 /* Firefox < 19 */
-input:-moz-placeholder {
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
     color: #ededed;
 }
-input:focus:-moz-placeholder {
+
+input:focus:-moz-placeholder,
+textarea:focus:-moz-placeholder {
     color: #ededed;
 }
+
 /* Firefox > 19 */
-input::-moz-placeholder {
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
     color: #999;
 }
-input:focus::-moz-placeholder {
+
+input:focus::-moz-placeholder,
+textarea:focus::-moz-placeholder {
     color: #ededed;
 }
 
 /* Internet Explorer 10 */
-input:-ms-input-placeholder {
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
     color: #999;
 }
-input:focus:-ms-input-placeholder {
+
+input:focus:-ms-input-placeholder,
+textarea:focus:-ms-input-placeholder {
     color: #ededed;
 }
 
