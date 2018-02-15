@@ -486,10 +486,14 @@ header ul li a:hover {
 /* ==================== CONTACT PAGE ====================*/
 
 body.contact {
-    background-image: url("../assets/backgrounds/husky.jpg");
+    background-image: url("../assets/backgrounds/huskyv2.jpg");
     background-repeat: no-repeat;
     background-size: 160%;
     background-position: center center;
+}
+
+.contact header {
+    background: transparent;
 }
 
 .small-heading {
@@ -510,24 +514,31 @@ body.contact {
 }
 
 .contact-wrapper {
-    background: #111;
+    /*    background: #111;*/
     height: 800px;
     width: 100%;
 }
 
 .contact-form-box {
+    background: #111;
     float: left;
     height: auto;
     min-height: 700px;
     padding: 40px 80px;
-    border: red 1px solid;
+    /*    border: red 1px solid;*/
+    z-index: 2;
 }
 
 .contact-form-box:after {
     content: '';
     background: orange;
-    width: 5px;
+    width: 100px;
     height: 100px;
+    display: block;
+    margin-left: -90px;
+    margin-bottom: -50px;
+    z-index: 1;
+    position: absolute;
 }
 
 .contact-form-box h2 {
@@ -536,14 +547,14 @@ body.contact {
 }
 
 .contact-form-holder {
-    border: blue 1px solid;
+    /*    border: blue 1px solid;*/
     width: 100%;
     height: auto;
 }
 
 .contact-form-img {
-    border: 1px solid orange;
-        background-image: url("../assets/backgrounds/husky.jpg");
+    /*    border: 1px solid orange;*/
+    background-image: url("../assets/backgrounds/husky.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
