@@ -128,7 +128,7 @@
 
 
     <!-- Header -->
-    <header class="header">
+    <header class="header fade-out-on-scroll">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!--
@@ -382,6 +382,13 @@
 
     <!-- init cubeportfolio -->
     <script src="js/base.js"></script>
+
+    <!-- content fade out on scroll script -->
+    <script>
+        $(window).scroll(function() {
+            $(".fade-out-on-scroll").css("opacity", 1 - $(window).scrollTop() / 150);
+        });
+    </script>
 
 </body>
 

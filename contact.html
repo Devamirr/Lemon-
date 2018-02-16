@@ -29,7 +29,7 @@
 
 <body class="contact">
     <!-- Header -->
-    <header class="header">
+    <header class="header fade-out-on-scroll">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!--
@@ -63,7 +63,7 @@
     <div class="col-md-10 wrapper contact-wrapper">
         <div class="container-fluid col-md-8">
             <div class="contact-form-box">
-<!--                <div class="col-md-8 contact-form-box">-->
+                <!--                <div class="col-md-8 contact-form-box">-->
                 <div class="contact-form-holder">
                     <h2>Send us a message</h2>
 
@@ -109,9 +109,15 @@
     </div>
 
 
-
     <!-- load jquery -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <!-- content fade out on scroll script -->
+    <script>
+        $(window).scroll(function() {
+            $(".fade-out-on-scroll").css("opacity", 1 - $(window).scrollTop() / 150);
+        });
+    </script>
 
 </body>
 

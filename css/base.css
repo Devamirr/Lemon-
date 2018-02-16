@@ -667,7 +667,7 @@ header ul li a:hover {
 /* ==================== CONTACT PAGE ====================*/
 
 body.contact {
-    background-image: url("../assets/backgrounds/huskyv2.jpg");
+    background-image: url("../assets/backgrounds/huskyv3.jpg");
     background-repeat: no-repeat;
     background-size: 160%;
     background-position: center center;
@@ -1003,4 +1003,19 @@ textarea:focus:-ms-input-placeholder {
 
 .socials-bar span {
     margin-left: 60px;
+}
+
+
+
+
+body.contact {
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.top {
+    margin: 0;
+  position: relative;
+  width: 100%;
+  opacity: 1;
 }
