@@ -695,7 +695,7 @@ body.contact {
 }
 
 .small-heading p {
-/*    width: 65%;*/
+    /*    width: 65%;*/
     width: 68%;
     margin-left: 0px;
     float: left;
@@ -760,7 +760,7 @@ body.contact {
     /* margin-top: 375px; */
     /* margin-top: 402px; */
     z-index: 555;
-/*    margin-left: -32.5%;*/
+    /*    margin-left: -32.5%;*/
     margin-left: -60%;
     /* margin-left: -40%; */
     width: 50%;
@@ -769,7 +769,7 @@ body.contact {
     animation-delay: 5s;
     opacity: 0;
     transition: all 300ms ease;
-     right: -50px; 
+    right: -50px;
     margin-top: 410px;
 }
 
@@ -978,6 +978,18 @@ textarea:-ms-input-placeholder {
 
 input:focus:-ms-input-placeholder,
 textarea:focus:-ms-input-placeholder {
+    color: #ededed;
+}
+
+.placeholder-fix:focus::-webkit-input-placeholder {
+    color: #ededed;
+}
+
+.placeholder-fix:focus::-moz-placeholder {
+    color: #ededed;
+}
+
+.placeholder-fix:-moz-placeholder {
     color: #ededed;
 }
 
