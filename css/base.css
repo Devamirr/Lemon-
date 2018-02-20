@@ -12,6 +12,10 @@
     outline: none;
 }
 
+::-webkit-scrollbar {
+display: none;
+}
+
 body {
     font-family: Arial, "Hiragino Kaku Gothic Pro W3", Meiryo, sans-serif;
     background-color: #333;
@@ -1020,6 +1024,30 @@ body.contact {
   opacity: 1;
 }
 
-::-webkit-scrollbar {
-display: none;
+/* ==================== ABOUT PAGE ====================*/
+
+.about-page-img {
+    /* border: 1px solid orange; */
+    background-image: url(../assets/backgrounds/husky.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 400px;
+    float: right;
+    /* margin-top: 375px; */
+    /* margin-top: 402px; */
+    z-index: 555;
+    /*    margin-left: -32.5%;*/
+    margin-left: -60%;
+    /* margin-left: -40%; */
+    width: 50%;
+/*
+    -webkit-animation: fade-inRight 3s linear normal forwards;
+    animation: fade-inRight 3s linear normal forwards;
+    animation-delay: 5s;
+    opacity: 0;
+*/
+    transition: all 300ms ease;
+    right: -50px;
+    margin-top: 410px;
 }
