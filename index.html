@@ -127,7 +127,7 @@
 
 
     <!-- Header -->
-    <header class="header fade-out-on-scroll">
+    <header class="main-header header fade-out-on-scroll">
         <nav class="navbar navbar-default">
             <div class="container-fluid">
                 <!--
@@ -161,6 +161,7 @@
             <div class="row page-heading">
                 <h1 class="back-fade">OUR WORK</h1>
             </div>
+            <div class="button">Add a class name to the first p element</div>
 
             <ul id="js-filters-masonry-projects" class="cbp-l-filters-buttonCenter">
                 <li data-filter="*" class="cbp-filter-item-active cbp-filter-item">
@@ -193,7 +194,7 @@
 
 
             <div id="js-grid-masonry-projects" class="cbp cbp-l-grid-masonry-projects">
-                <div class="cbp-item graphic">
+                <div class="cbp-item graphic item-add-class" add-class-to-main-header>
                     <div class="cbp-caption project post">
                         <div class="cbp-caption-defaultWrap">
                             <img src="http://scriptpie.com/cubeportfolio/img/?i=380x370/6b4d10" alt="">
@@ -372,6 +373,17 @@
         </div>
     </div>
 
+
+    <!-- javascript header / add class onclick test -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $(".item-add-class").click(function() {
+                $(".navbar-collapse").addClass("main-header-on-click");
+            });
+        });
+    </script>
 
 
     <!-- load jquery -->
