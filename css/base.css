@@ -13,7 +13,7 @@
 }
 
 ::-webkit-scrollbar {
-display: none;
+    display: none;
 }
 
 body {
@@ -255,83 +255,86 @@ header ul li a:hover {
 /* =================== progressbar scrolling- top =================== */
 
 progress {
-  /* Positioning */
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index;999;
-  /* Dimensions */
-  width: 100%;
-  height: .07em;
+    /* Positioning */
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index;
+    999;
+    /* Dimensions */
+    width: 100%;
+    height: .07em;
 
-  /* Reset the apperance */  
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+    /* Reset the apperance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
-  /* Get rid of the default border in Firefox/Opera. */
-  border: none;
+    /* Get rid of the default border in Firefox/Opera. */
+    border: none;
 
-  /* For Firefox/IE10+ */
-  background-color: transparent;
+    /* For Firefox/IE10+ */
+    background-color: transparent;
 
-  /* For IE10+, color of the progress bar */
-  color: red;
+    /* For IE10+, color of the progress bar */
+    color: red;
 }
 
 progress::-webkit-progress-bar {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 .flat::-webkit-progress-value {
-  background-color: red;
+    background-color: red;
 }
 
 .flat::-moz-progress-bar {
-  background-color: red;
+    background-color: red;
 }
 
 .single::-webkit-progress-value {
-  background-color: transparent;
-  background-image: -webkit-linear-gradient(left, transparent, red);
+    background-color: transparent;
+    background-image: -webkit-linear-gradient(left, transparent, red);
 }
 
 .single::-moz-progress-bar {
-  background-color: transparent;
-  background-image: -moz-linear-gradient(left, transparent, red);
+    background-color: transparent;
+    background-image: -moz-linear-gradient(left, transparent, red);
 }
 
 .multiple::-webkit-progress-value {
-  background-image: -webkit-linear-gradient(-45deg, 
-	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
-	                           rgba(0,0, 0, .1) 66%, transparent 66%),
-	                  -webkit-linear-gradient(left, green, red);
+    background-image: -webkit-linear-gradient(-45deg,
+    transparent 33%, rgba(0, 0, 0, .1) 33%,
+    rgba(0, 0, 0, .1) 66%, transparent 66%),
+    -webkit-linear-gradient(left, green, red);
 }
 
 .multiple::-moz-progress-bar {
-  background-image: -moz-linear-gradient(-45deg, 
-	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
-	                           rgba(0,0, 0, .1) 66%, transparent 66%),
-	                  -moz-linear-gradient(left, green, red);
+    background-image: -moz-linear-gradient(-45deg,
+    transparent 33%, rgba(0, 0, 0, .1) 33%,
+    rgba(0, 0, 0, .1) 66%, transparent 66%),
+    -moz-linear-gradient(left, green, red);
 }
 
 .progress-container {
-  width: 100%;
-  background-color: transparent;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: .25em;
-  display: block;
-  z-index;999;
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: .25em;
+    display: block;
+    z-index;
+    999;
 }
 
 .progress-bar {
-  background-color: red;
-  width: 50%;
-  display: block;
-  height: inherit;
-    z-index;999;
+    background-color: red;
+    width: 50%;
+    display: block;
+    height: inherit;
+    z-index;
+    999;
 }
 
 progress#progressBar {
@@ -378,6 +381,7 @@ progress#progressBar {
     width: 100%;
     background-color: #1d1d1c;
     z-index: 9999;
+    display: none;
 }
 
 .enter_link {
@@ -1108,9 +1112,9 @@ body.contact {
 
 .top {
     margin: 0;
-  position: relative;
-  width: 100%;
-  opacity: 1;
+    position: relative;
+    width: 100%;
+    opacity: 1;
 }
 
 /* ==================== ABOUT PAGE ====================*/
@@ -1130,7 +1134,7 @@ body.contact {
     margin-left: -60%;
     /* margin-left: -40%; */
     width: 50%;
-/*
+    /*
     -webkit-animation: fade-inRight 3s linear normal forwards;
     animation: fade-inRight 3s linear normal forwards;
     animation-delay: 5s;
@@ -1140,3 +1144,4 @@ body.contact {
     right: -50px;
     margin-top: 410px;
 }
+

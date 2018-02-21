@@ -4950,3 +4950,25 @@
     height: 100%;
 }
 
+/* ==================== CASE DETAIL PAGE ====================*/
+
+/* Project title */
+
+.cbp-popup-navigation-wrap {
+    /*display: none;*/
+}
+
+.cbp-l-project-title,
+.cbp-l-project-subtitle {
+    text-align: left;
+}
+
+.cbp-l-project-subtitle {
+    margin-left: 0px;
+}
+
+
+
+.project-title-left {
+    color: red;
+}
