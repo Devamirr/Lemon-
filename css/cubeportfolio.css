@@ -4971,8 +4971,9 @@
     margin-left: 0px;
 }
 
-.project-title-left {
-    color: orange;
+.project-title-left, .project-title-right {
+    float: left;
+    width: 50%;
 }
 
 .cbp-popup-wrap.cbp-popup-singlePage.cbp-popup-singlePage-open.cbp-popup-transitionend.cbp-popup-singlePage-sticky.cbp-popup-ready {
