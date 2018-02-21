@@ -4,7 +4,14 @@ $(window).scroll(function () {
 });
 
 
-(function($, window, document, undefined) {
+$(document).ready(function(){
+  $('ul li a').click(function(){
+    $('li a').removeClass("active");
+    $(this).addClass("active");
+  });
+});
+
+(function ($, window, document, undefined) {
     'use strict';
 
     // init cubeportfolio
@@ -51,7 +58,7 @@ $(window).scroll(function () {
         singlePageDeeplinking: true,
         singlePageStickyNavigation: true,
         singlePageCounter: '<div class="cbp-popup-singlePage-counter">{{current}} of {{total}}</div>',
-        singlePageCallback: function(url, element) {
+        singlePageCallback: function (url, element) {
             // to update singlePage content use the following method: this.updateSinglePage(yourContent)
             var t = this;
 
@@ -61,10 +68,10 @@ $(window).scroll(function () {
                     dataType: 'html',
                     timeout: 30000
                 })
-                .done(function(result) {
+                .done(function (result) {
                     t.updateSinglePage(result);
                 })
-                .fail(function() {
+                .fail(function () {
                     t.updateSinglePage('AJAX Error! Please refresh the page!');
                 });
         },
@@ -79,130 +86,122 @@ $('.enter_link').click(function () {
 if (!sessionStorage.isVisited) {
     sessionStorage.isVisited = 'true'
     $(this).parent('#splashscreen').slideUp(500);
-  }
+}
 
-$(document).ready(function(){
-    
-    var getMax = function(){
-        return $(document).height() - $(window).height();
-    }
-    
-    var getValue = function(){
-        return $(window).scrollTop();
-    }
-    
-    if('max' in document.createElement('progress')){
-        // Browser supports progress element
-        var progressBar = $('progress');
-        
-        // Set the Max attr for the first time
-        progressBar.attr({ max: getMax() });
-
-        $(document).on('scroll', function(){
-            // On scroll only Value attr needs to be calculated
-            progressBar.attr({ value: getValue() });
-        });
-      
-        $(window).resize(function(){
-            // On resize, both Max/Value attr needs to be calculated
-            progressBar.attr({ max: getMax(), value: getValue() });
-        });   
-    }
-    else {
-        var progressBar = $('.progress-bar'), 
-            max = getMax(), 
-            value, width;
-        
-        var getWidth = function(){
-            // Calculate width in percentage
-            value = getValue();            
-            width = (value/max) * 100;
-            width = width + '%';
-            return width;
-        }
-        
-        var setWidth = function(){
-            progressBar.css({ width: getWidth() });
-        }
-        
-        $(document).on('scroll', setWidth);
-        $(window).on('resize', function(){
-            // Need to reset the Max attr
-            max = getMax();
-            setWidth();
-        });
-    }
-});
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-$(document).ready(function(){
-  
-  $('#flat').addClass("active");
-  $('#progressBar').addClass('semantic');
-    
-  $('#flat').on('click', function(){
-    $('#progressBar').removeClass().addClass('flat');
-    $('a').removeClass();
-    $(this).addClass('active');
-    $(this).preventDefault();
-  });
-
-  $('#single').on('click', function(){
-    $('#progressBar').removeClass().addClass('single');
-    $('a').removeClass();    
-    $(this).addClass('active');
-    $(this).preventDefault();    
-  });
-
-  $('#multiple').on('click', function(){
-    $('#progressBar').removeClass().addClass('multiple');
-    $('a').removeClass();    
-    $(this).addClass('active');
-    $(this).preventDefault();    
-  });
-
-  $('#semantic').on('click', function(){
-    $('#progressBar').removeClass().addClass('semantic');
-    $('a').removeClass();    
-    $(this).addClass('active');
-    $(this).preventDefault();
-    alert('hello');
-  });
-
-  $(document).on('scroll', function(){
-
-      maxAttr = $('#progressBar').attr('max');
-      valueAttr = $('#progressBar').attr('value');
-      percentage = (valueAttr/maxAttr) * 100;
-      
-      if(percentage<49){
-        document.styleSheets[0].addRule('.semantic', 'color: #fedd13');
-        document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: #fedd13');
-        document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: #fedd13');
-      }
-      else if(percentage<98){
-        document.styleSheets[0].addRule('.semantic', 'color: #f08e1c');
-        document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: #f08e1c');
-        document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: #f08e1c');
-      }
-      else {
-        document.styleSheets[0].addRule('.semantic', 'color: #4a575f');
-        document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: #4a575f');
-        document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: #4a575f');
-      }      
-  });
-  
-});
+//$(document).ready(function () {
+//
+//    var getMax = function () {
+//        return $(document).height() - $(window).height();
+//    }
+//
+//    var getValue = function () {
+//        return $(window).scrollTop();
+//    }
+//
+//    if ('max' in document.createElement('progress')) {
+//        // Browser supports progress element
+//        var progressBar = $('progress');
+//
+//        // Set the Max attr for the first time
+//        progressBar.attr({
+//            max: getMax()
+//        });
+//
+//        $(document).on('scroll', function () {
+//            // On scroll only Value attr needs to be calculated
+//            progressBar.attr({
+//                value: getValue()
+//            });
+//        });
+//
+//        $(window).resize(function () {
+//            // On resize, both Max/Value attr needs to be calculated
+//            progressBar.attr({
+//                max: getMax(),
+//                value: getValue()
+//            });
+//        });
+//    } else {
+//        var progressBar = $('.progress-bar'),
+//            max = getMax(),
+//            value, width;
+//
+//        var getWidth = function () {
+//            // Calculate width in percentage
+//            value = getValue();
+//            width = (value / max) * 100;
+//            width = width + '%';
+//            return width;
+//        }
+//
+//        var setWidth = function () {
+//            progressBar.css({
+//                width: getWidth()
+//            });
+//        }
+//
+//        $(document).on('scroll', setWidth);
+//        $(window).on('resize', function () {
+//            // Need to reset the Max attr
+//            max = getMax();
+//            setWidth();
+//        });
+//    }
+//});
+//
+//$(document).ready(function () {
+//
+//    $('#flat').addClass("active");
+//    $('#progressBar').addClass('semantic');
+//
+//    $('#flat').on('click', function () {
+//        $('#progressBar').removeClass().addClass('flat');
+//        $('a').removeClass();
+//        $(this).addClass('active');
+//        $(this).preventDefault();
+//    });
+//
+//    $('#single').on('click', function () {
+//        $('#progressBar').removeClass().addClass('single');
+//        $('a').removeClass();
+//        $(this).addClass('active');
+//        $(this).preventDefault();
+//    });
+//
+//    $('#multiple').on('click', function () {
+//        $('#progressBar').removeClass().addClass('multiple');
+//        $('a').removeClass();
+//        $(this).addClass('active');
+//        $(this).preventDefault();
+//    });
+//
+//    $('#semantic').on('click', function () {
+//        $('#progressBar').removeClass().addClass('semantic');
+//        $('a').removeClass();
+//        $(this).addClass('active');
+//        $(this).preventDefault();
+//        alert('hello');
+//    });
+//
+//    $(document).on('scroll', function () {
+//
+//        maxAttr = $('#progressBar').attr('max');
+//        valueAttr = $('#progressBar').attr('value');
+//        percentage = (valueAttr / maxAttr) * 100;
+//
+//        if (percentage < 49) {
+//            document.styleSheets[0].addRule('.semantic', 'color: #fedd13');
+//            document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: #fedd13');
+//            document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: #fedd13');
+//        } else if (percentage < 98) {
+//            document.styleSheets[0].addRule('.semantic', 'color: #f08e1c');
+//            document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: #f08e1c');
+//            document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: #f08e1c');
+//        } else {
+//            document.styleSheets[0].addRule('.semantic', 'color: #4a575f');
+//            document.styleSheets[0].addRule('.semantic::-webkit-progress-value', 'background-color: #4a575f');
+//            document.styleSheets[0].addRule('.semantic::-moz-progress-bar', 'background-color: #4a575f');
+//        }
+//    });
+//
+//});
