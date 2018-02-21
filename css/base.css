@@ -576,6 +576,10 @@ progress#progressBar {
     border-bottom: 1px solid #FFDE13;
 }
 
+span.cbp-filter-counter {
+    display: none;
+}
+
 /* ---------- Slide in overlay animation ---------- */
 
 .grid {
