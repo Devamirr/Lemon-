@@ -231,6 +231,7 @@ header ul li a:hover {
     position: relative;
 }
 
+/*
 .navbar-collapse:after {
     display: block;
     content: '';
@@ -239,6 +240,13 @@ header ul li a:hover {
     bottom: 0;
     height: 1px;
     width: 100%;
+}
+
+*/
+
+.bar-nav {
+    width: 100%;
+    height: 3px;
     background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(120, 120, 120, 1) 100%);
     /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(120, 120, 120, 1) 100%);
@@ -247,7 +255,11 @@ header ul li a:hover {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#787878', GradientType=1);
     /* IE6-9 */
+    bottom:0px;
+    position: absolute;
+    z-index: -10;
 }
+
 
 /* =================== progressbar scrolling- top =================== */
 
