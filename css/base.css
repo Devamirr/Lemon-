@@ -390,7 +390,7 @@ progress#progressBar {
     width: 100%;
     background-color: #1d1d1c;
     z-index: 9999;
-/*    display: none;*/
+    display: none;
 }
 
 .enter_link {
