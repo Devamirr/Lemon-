@@ -4562,6 +4562,9 @@
     }
 }
 
+
+
+
 .cbp-l-grid-masonry-projects .cbp-caption-activeWrap {}
 
 .cbp-l-grid-masonry-projects .cbp-l-caption-buttonLeft,
@@ -4754,6 +4757,18 @@
         text-align: center;
     }
 }
+
+
+@media only screen and (max-width: 904px) {
+    .mob-subtekst {
+        display: block!important;
+    }
+}
+
+
+.mob-subtekst {
+        display: none;
+    }
 
 .cbp-l-slider-testimonials-wrap {
     background: #f8f9f9;
@@ -5026,4 +5041,12 @@
 
 .cbp-popup-singlePage .cbp-popup-content {
     max-width: 75%;
+}
+
+.side-nav-tekst {
+    margin-bottom: 0px;
+}
+
+.cbp-l-filters-buttonCenter .cbp-filter-item {
+color: #fff;
 }
