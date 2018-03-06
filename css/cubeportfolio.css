@@ -5031,7 +5031,10 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#787878', GradientType=1);
 */
     background: red;
+}
 
+.main-header-on-click-remove {
+    background: blue;
 }
 
 /* verwijderen als er een betere oplossing voor is om de content onder de slider vandaan te krijgen */
