@@ -185,7 +185,7 @@ header {
 
 #navbar {
     flex-basis: 50%;
-    margin-right: -16px;
+    /*margin-right: -16px;** /* zorgde ervoor dat de header 16px naar rechts ging, geen idee waarom? */
     padding: .5rem 1rem 0rem 0rem!important;
 }
 

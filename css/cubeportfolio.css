@@ -4977,20 +4977,36 @@
     width: 50%;
 }
 
+.project-title-left {
+    border-right: 5px solid #fff;
+}
+
+.project-title-right {
+    padding-left: 50px;
+}
+
+.cbp-l-project-title, .project-title-right, .cbp-l-project-subtitle {
+    color: red;
+    font-family: 'cera-med';
+}
+
+.cbp-l-project-subtitle {
+    font-size: 40px
+}
+
 .cbp-popup-wrap.cbp-popup-singlePage.cbp-popup-singlePage-open.cbp-popup-transitionend.cbp-popup-singlePage-sticky.cbp-popup-ready {
     background: #b663eb;
     z-index: 50;
 }
 
 .project-title-wrapper {
-    margin-bottom: 50px;
+    /*margin-bottom: 50px;*/
 }
 
 /* popup navigation */
 
 .main-header-on-click {
     font-size: 150%;
-    /*    background: red;*/
     transition: all ease 700ms;
     transition-delay: 0.8s;
 /*
@@ -4999,4 +5015,15 @@
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#787878', GradientType=1);
 */
+    background: red;
+
+}
+
+/* verwijderen als er een betere oplossing voor is om de content onder de slider vandaan te krijgen */
+.cbp-l-project-container {
+    margin-top: 250px;
+}
+
+.cbp-popup-singlePage .cbp-popup-content {
+    max-width: 75%;
 }
