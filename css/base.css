@@ -29,6 +29,10 @@ body a:visited {
     text-decoration: none;
 }
 
+body header a:visited { 
+color: #fff;
+}
+
 body a:hover {
     color: #aaa;
 }
