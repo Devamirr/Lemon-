@@ -398,6 +398,19 @@ progress#progressBar {
     height: 100vh;
 }
 
+.splashscreen-content {
+    width: 100%;
+    height: auto;
+    
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    text-align: center;        
+    background-image: url('Images/loginBox.png');
+    -webkit-transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%); 
+}
+
 .enter_link {
     display: block;
     z-index: 999;
@@ -408,6 +421,7 @@ progress#progressBar {
     text-decoration: none!important;
     -webkit-animation: left-fade-in 7s linear normal forwards;
     animation: left-fade-in 7s linear normal forwards;
+    animation: color-change 7s;
 }
 
 .enter_link:hover .icon-intro {
@@ -529,11 +543,12 @@ progress#progressBar {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 500px;
-    width: 100%;
+    height: 600px;
+    width: 65%;
     position: absolute;
     right: 0;
-    top: 60px;
+    left: 0;
+    top: 0px;
     opacity: 1;
     -webkit-animation: img-left-fade-in 8s linear normal forwards;
     animation: img-left-fade-in 8s linear normal forwards;
