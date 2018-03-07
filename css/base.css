@@ -387,14 +387,15 @@ progress#progressBar {
 /* ------------intro screen------------- */
 
 #splashscreen {
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     bottom: 0;
     width: 100%;
     background-color: #1d1d1c;
     z-index: 9999;
-    display: none;
+    display: block;
+    height: 100vh;
 }
 
 .enter_link {
