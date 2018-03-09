@@ -226,13 +226,16 @@ header ul li a {
 header ul li a:hover {
     color: #fff;
     text-decoration: none;
-    border-bottom: 3px solid #FFDE13;
+/*    border-bottom: 3px solid #FFDE13;*/
+    border-bottom: 1.4px solid #Fff;
+    transition: all ease 300ms;
 }
 
 .activeLink {
     color: #fff;
     text-decoration: none;
-    border-bottom: 3px solid #FFDE13;
+    /*    border-bottom: 3px solid #FFDE13;*/
+    border-bottom: 1.4px solid #FFDE13;
 }
 
 .navbar-collapse {
@@ -893,8 +896,8 @@ body.contact {
 }
 
 .contact-form-box {
-    /*    background: #111;*/
-    background: #201F1F;
+    background: #111;
+    /*    background: #201F1F;*/
     float: left;
     height: auto;
     min-height: 700px;
@@ -963,7 +966,13 @@ body.contact {
     transition: all 300ms ease;
     right: -50px;
     /*    margin-top: 410px;*/
-    margin-top: 590px;
+    /*    margin-top: 590px;*/
+    /*    margin-top:  703px;*/
+    margin-top: 823px;
+
+
+    margin-right: -3%;
+    position: absolute;
 }
 
 
@@ -1235,7 +1244,8 @@ body.contact {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    height: 400px;
+    /*    height: 400px;*/
+    height: 460px;
     float: right;
     /* margin-top: 375px; */
     /* margin-top: 402px; */
