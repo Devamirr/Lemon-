@@ -3,6 +3,10 @@ $(document).ready(function(){
     $('li a').removeClass("active");
     $(this).addClass("active");
   });
+//add backtround color on project click
+  $(".item-add-class").click(function() {
+    $(".navbar-collapse").addClass("main-header-on-click");
+  });
 });
 
 (function ($, window, document, undefined) {
