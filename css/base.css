@@ -29,8 +29,8 @@ body a:visited {
     text-decoration: none;
 }
 
-body header a:visited { 
-color: #fff;
+body header a:visited {
+    color: #fff;
 }
 
 body a:hover {
@@ -259,7 +259,7 @@ header ul li a:hover {
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#787878', GradientType=1);
     /* IE6-9 */
-    bottom:0px;
+    bottom: 0px;
     position: absolute;
     z-index: -10;
 }
@@ -401,14 +401,14 @@ progress#progressBar {
 .splashscreen-content {
     width: 100%;
     height: auto;
-    
+
     position: absolute;
     left: 50%;
     top: 40%;
-    text-align: center;        
+    text-align: center;
     background-image: url('Images/loginBox.png');
-    -webkit-transform: translate(-50%, -50%); 
-    transform: translate(-50%, -50%); 
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
 }
 
 .enter_link {
@@ -416,7 +416,7 @@ progress#progressBar {
     z-index: 999;
     position: relative;
     height: 100px;
-    top: 40px;
+    top: 60vh;
     width: 40%;
     text-decoration: none!important;
     -webkit-animation: left-fade-in 7s linear normal forwards;
@@ -805,19 +805,24 @@ body.contact {
 }
 
 .small-heading {
-    margin-top: 145px;
+    /*    margin-top: 145px;*/
+    margin-top: 244px;
     text-align: left;
     -webkit-animation: left-fade-in 3s linear normal forwards;
     animation: left-fade-in 3s linear normal forwards;
-    margin-bottom: 130px;
+    /*    margin-bottom: 130px;*/
+    margin-bottom: 185px;
     max-width: 46%;
 }
 
-.small-heading h1::after {
+.small-heading::after {
     content: '';
-    background: orange;
-    width: 100px;
+    background: #FFDE13;
+    width: 365px;
     height: 5px;
+    display: block;
+    margin-bottom: 60px;
+    margin-left: 172px;
 }
 
 .small-heading p {
@@ -826,7 +831,11 @@ body.contact {
     margin-left: 0px;
     float: left;
     font-size: 0.9rem;
+    margin-top: 60px;
+}
 
+.small-heading h1 {
+    margin-bottom: 20px;
 }
 
 .contact-wrapper {
@@ -1173,4 +1182,3 @@ body.contact {
     right: -50px;
     margin-top: 410px;
 }
-
