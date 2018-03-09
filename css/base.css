@@ -811,7 +811,7 @@ body.contact {
     -webkit-animation: left-fade-in 3s linear normal forwards;
     animation: left-fade-in 3s linear normal forwards;
     /*    margin-bottom: 130px;*/
-    margin-bottom: 185px;
+    /*    margin-bottom: 190px;*/
     max-width: 46%;
 }
 
@@ -832,6 +832,8 @@ body.contact {
     float: left;
     font-size: 0.9rem;
     margin-top: 60px;
+    margin-bottom: 180px;
+    max-width: 610px;
 }
 
 .small-heading h1 {
@@ -840,7 +842,8 @@ body.contact {
 
 .contact-wrapper {
     /*    background: #111;*/
-    height: 800px;
+    /*    height: 800px;*/
+    height: 1140px;
     width: 100%;
     -webkit-animation: left-fade-in 4s linear normal forwards;
     animation: left-fade-in 4s linear normal forwards;
@@ -855,18 +858,26 @@ body.contact {
     /*    border: red 1px solid;*/
     position: relative;
     width: 80%;
+    padding-top: 130px;
+    padding-bottom: 100px;
 
+    max-width: 1070px;
+    /* optioneel */
 }
 
 .contact-form-box:after {
     content: '';
     background: orange;
+    /*
     width: 100px;
     height: 100px;
+*/
+    width: 150px;
+    height: 150px;
     display: block;
-    margin-left: -85px;
+    margin-left: -86px;
     /*    margin-top: -35px;*/
-    margin-top: -55px;
+    margin-top: -44px;
     /*    z-index: 1;*/
     position: absolute;
 
@@ -876,6 +887,7 @@ body.contact {
 .contact-form-box h2 {
     color: #FFDE13;
     text-align: left;
+    margin-bottom: 0px;
 }
 
 .contact-form-holder {
@@ -899,13 +911,15 @@ body.contact {
     margin-left: -60%;
     /* margin-left: -40%; */
     width: 50%;
+    min-width: 650px;
     -webkit-animation: fade-inRight 3s linear normal forwards;
     animation: fade-inRight 3s linear normal forwards;
     animation-delay: 5s;
     opacity: 0;
     transition: all 300ms ease;
     right: -50px;
-    margin-top: 410px;
+/*    margin-top: 410px;*/
+    margin-top: 590px;
 }
 
 
@@ -942,7 +956,8 @@ body.contact {
 /* Contact form */
 
 form {
-    margin-top: 60px;
+    /*    margin-top: 60px;*/
+    margin-top: 100px;
     -webkit-animation: fade-inLeft 5s linear normal forwards;
     animation: fade-inLeft 5s linear normal forwards;
 
@@ -991,6 +1006,10 @@ textarea {
     margin-right: 20.5px;
     padding-bottom: 10px;
     margin-bottom: 40px;
+}
+
+.form-message-input {
+    margin-bottom: 100px;
 }
 
 .form-name-input:after,
@@ -1064,6 +1083,7 @@ input.button {
     width: 60%;
     font-size: 0.9rem;
     height: 35px;
+    min-width: 230px;
 }
 
 input.button:hover {
