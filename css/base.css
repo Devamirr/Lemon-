@@ -656,6 +656,23 @@ span.cbp-filter-counter {
     display: none;
 }
 
+.cbp-l-filters-buttonCenter .cbp-filter-item.cbp-filter-item-active:after {
+    content: '';
+    display: block;
+    background: #FFDE13;
+    width: 75px;
+    height: 2px;
+    position: absolute;
+    top: 37px;
+    right: 30px;
+    transition: 200ms ease-in;
+}
+
+.cbp-l-filters-buttonCenter .cbp-filter-item {
+    transition: 200ms ease-in;
+    padding: 5px 17px;
+}
+
 /* ---------- Slide in overlay animation ---------- */
 
 .grid {
@@ -763,11 +780,11 @@ span.cbp-filter-counter {
 .overlay p.project-type {
     color: #FFDE13;
     margin-bottom: 0px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
     text-transform: uppercase;
 }
 
-.overlay h1.project-name {
+.overlay h1.project-name, .overlay h1.project-date {
     color: #fff;
     float: left;
     /* line-height: 1; */
@@ -783,10 +800,20 @@ span.cbp-filter-counter {
     transition: all 300ms;
 }
 
-.overlay h1.project-name:hover {
-    color: #f9cc00;
+.overlay h1.project-name {
+    height: 50px;
+    line-height: 1.8;
+    font-size: 30px;
 }
 
+.overlay h1.project-name:hover {
+    color: #f9cc00; 
+}
+
+.overlay h1.project-date {
+    border-right: none;
+    font-size: 13px;
+}
 
 .left-project-name {
     width: 50%;
@@ -804,7 +831,9 @@ span.cbp-filter-counter {
     text-align: left;
 }
 
-.overlay {}
+.overlay {
+    border-bottom: 0.8px solid #FFDE13;
+}
 
 .overlay:before,
 .bot-left:after {

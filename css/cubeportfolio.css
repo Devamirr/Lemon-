@@ -3570,6 +3570,7 @@
     margin: 0 auto 50px;
     max-width: 500px;
     text-align: center;
+    line-height: 1;
 }
 
 .cbp-popup-singlePage .cbp-popup-content .cbp-l-project-img {
@@ -4990,10 +4991,11 @@
 .project-title-right {
     float: left;
     width: 50%;
+    margin-bottom: 30px;
 }
 
 .project-title-left {
-    border-right: 5px solid #fff;
+    border-right: 3px solid #fff;
 }
 
 .project-title-right {
@@ -5001,7 +5003,7 @@
 }
 
 .cbp-l-project-title, .project-title-right, .cbp-l-project-subtitle {
-    color: red;
+    color: #fff;
     font-family: 'cera-med';
 }
 
@@ -5010,8 +5012,14 @@
 }
 
 .cbp-popup-wrap.cbp-popup-singlePage.cbp-popup-singlePage-open.cbp-popup-transitionend.cbp-popup-singlePage-sticky.cbp-popup-ready {
-    background: #b663eb;
+/*    background: #b663eb;*/
     z-index: 50;
+    
+background: #111111;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #111111, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #111111, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 }
 
 .project-title-wrapper {
@@ -5030,7 +5038,7 @@
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#787878', GradientType=1);
 */
-    background: red;
+/*    background: red;*/
 }
 
 .main-header-on-click-remove {
@@ -5043,14 +5051,47 @@
 }
 
 .cbp-popup-singlePage .cbp-popup-content {
-    max-width: 75%;
+/*    max-width: 75%;*/
 }
 
 .side-nav-tekst {
     margin-bottom: 0px;
 }
 
-.cbp-l-filters-buttonCenter .cbp-filter-item {
+/* project beschrijving */
+.cbp-l-filters-buttonCenter .cbp-filter-item, .cbp-l-project-desc-text, .cbp-l-project-details-list strong, .cbp-l-project-details-list > li, .cbp-l-project-details-list > div {
 color: #fff;
 }
 
+.cbp-l-project-details-list > li, .cbp-l-project-details-list > div {
+border-bottom-color: transparent;
+}
+
+/* project navigation */
+.cbp-slider .cbp-nav-pagination {
+    text-align: center;
+    bottom: 10;
+    top: 940px;
+    right: 0;
+    left: 0;
+}
+
+.cbp-nav-pagination-item {
+    border-radius: 0;
+    height: 2px;
+}
+
+.cbp-slider .cbp-nav-controls {
+    display: none;
+}
+
+/*
+.cbp-popup-singlePage .cbp-popup-prev {
+    background:none;
+}*/
+
+.project2 .cbp-l-project-title {
+    background: -webkit-linear-gradient(#9b003f, #ce0054);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
