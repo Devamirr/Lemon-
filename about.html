@@ -69,32 +69,8 @@
    
     <!-- load jquery -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
-    <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/owl.carousel.min.js">
-    </script>
 
     <!-- content fade out on scroll script -->
-    <script>
-
-
-        $(document).ready(function() {
-  var $owl = $('.owl-carousel');
-
-  $owl.children().each( function( index ) {
-    $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
-  });
-
-  $owl.owlCarousel({
-    center: true,
-    loop: false,
-    items: 4,
-  });
-
-  $(document).on('click', '.owl-item>div', function() {
-    $owl.trigger('to.owl.carousel', $(this).data( 'position' ) );
-  });
-});
-        
-    </script>
 
 </body>
 
