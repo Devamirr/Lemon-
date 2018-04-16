@@ -4768,8 +4768,8 @@
 
 
 .mob-subtekst {
-        display: none;
-    }
+    display: none;
+}
 
 .cbp-l-slider-testimonials-wrap {
     background: #f8f9f9;
@@ -5002,7 +5002,9 @@
     padding-left: 50px;
 }
 
-.cbp-l-project-title, .project-title-right, .cbp-l-project-subtitle {
+.cbp-l-project-title,
+.project-title-right,
+.cbp-l-project-subtitle {
     color: #fff;
     font-family: 'cera-med';
 }
@@ -5012,14 +5014,15 @@
 }
 
 .cbp-popup-wrap.cbp-popup-singlePage.cbp-popup-singlePage-open.cbp-popup-transitionend.cbp-popup-singlePage-sticky.cbp-popup-ready {
-/*    background: #b663eb;*/
+    /*    background: #b663eb;*/
     z-index: 50;
-    
-background: #111111;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to bottom, #111111, #000000);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to bottom, #111111, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-
+    background: #111111;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #111111, #000000);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #111111, #000000);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .project-title-wrapper {
@@ -5032,13 +5035,13 @@ background: linear-gradient(to bottom, #111111, #000000); /* W3C, IE 10+/ Edge, 
     font-size: 150%;
     transition: all ease 700ms;
     transition-delay: 0.8s;
-/*
+    /*
             background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(120, 120, 120, 1) 100%);
     background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 100%);
     background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#787878', GradientType=1);
 */
-/*    background: red;*/
+    /*    background: red;*/
 }
 
 .main-header-on-click-remove {
@@ -5046,12 +5049,13 @@ background: linear-gradient(to bottom, #111111, #000000); /* W3C, IE 10+/ Edge, 
 }
 
 /* verwijderen als er een betere oplossing voor is om de content onder de slider vandaan te krijgen */
+
 .cbp-l-project-container {
     margin-top: 250px;
 }
 
 .cbp-popup-singlePage .cbp-popup-content {
-/*    max-width: 75%;*/
+    /*    max-width: 75%;*/
 }
 
 .side-nav-tekst {
@@ -5059,15 +5063,22 @@ background: linear-gradient(to bottom, #111111, #000000); /* W3C, IE 10+/ Edge, 
 }
 
 /* project beschrijving */
-.cbp-l-filters-buttonCenter .cbp-filter-item, .cbp-l-project-desc-text, .cbp-l-project-details-list strong, .cbp-l-project-details-list > li, .cbp-l-project-details-list > div {
-color: #fff;
+
+.cbp-l-filters-buttonCenter .cbp-filter-item,
+.cbp-l-project-desc-text,
+.cbp-l-project-details-list strong,
+.cbp-l-project-details-list > li,
+.cbp-l-project-details-list > div {
+    color: #fff;
 }
 
-.cbp-l-project-details-list > li, .cbp-l-project-details-list > div {
-border-bottom-color: transparent;
+.cbp-l-project-details-list > li,
+.cbp-l-project-details-list > div {
+    border-bottom-color: transparent;
 }
 
 /* project navigation */
+
 .cbp-slider .cbp-nav-pagination {
     text-align: center;
     bottom: 10;
@@ -5094,4 +5105,23 @@ border-bottom-color: transparent;
     background: -webkit-linear-gradient(#9b003f, #ce0054);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* filter sidebar edit */
+
+.cbp-l-filters-buttonCenter .cbp-filter-item:hover {
+    color: #ccc;
+    transition: all ease 300ms !important;
+}
+
+.cbp-l-filters-buttonCenter .cbp-filter-item.cbp-filter-item-active {
+    font-weight: bold;
+}
+
+.cbp-l-filters-buttonCenter .cbp-filter-item.cbp-filter-item-active:after {
+    display: none !important;
+}
+
+p.side-nav-tekst {
+    font-size: 13.6px;
 }

@@ -41,9 +41,14 @@
         </div>
         <div class="slider-footer">
             <div class="col-md-10 slider-footer-content">
-                <div class="slider-social"><a href="https://www.instagram.com/lemoncreativeagency/"><i class="fab fa-instagram"></i>#lemoncreativeagency</a></div>
+                <div class="slider-social">
+                    <a href="https://www.instagram.com/lemoncreativeagency/" target="_blank"><i class="fab fa-instagram"></i>#lemoncreativeagency</a>
+                </div>
+                <div id="section07" class="demo">
+                    <a href="#cases"><span></span><span></span><span></span><p>Scroll</p></a>
+                </div>
 
-                <div class="slider-seemore"><a href="#">See more</a></div>
+                <div class="slider-seemore"><a href="#cases">See more</a></div>
             </div>
         </div>
     </div>
@@ -68,14 +73,11 @@
         </nav>
     </header>
 
-
-
-
     <!-- Work fliter -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="cases">
         <div class="container-fluid container-edit col-md-12">
             <div class="row page-heading">
-                <h1 class="back-fade">OUR WORK</h1>
+                <h1 class="back-fade">CASES</h1>
             </div>
 
             <ul id="js-filters-masonry-projects" class="cbp-l-filters-buttonCenter">
@@ -463,6 +465,18 @@
     <script src="js/base.js" defer></script>
 
     <script src="js/cubePortfolio.js" defer></script>
+
+    <!-- splashscreen -->
+    <script>
+        $(function() {
+            $('a[href*=#]').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({
+                    scrollTop: $($(this).attr('href')).offset().top
+                }, 500, 'linear');
+            });
+        });
+    </script>
 
 </body>
 
