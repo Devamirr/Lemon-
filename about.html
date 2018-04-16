@@ -27,7 +27,7 @@
 
 </head>
 
-<body class="contact">
+<body class="about">
     <!-- Header -->
     <header class="header fade-out-on-scroll">
         <nav class="navbar navbar-default">
@@ -53,33 +53,47 @@
     <!-- Page heading -->
     <div class="container-fluid">
         <div class="col-md-6  small-heading">
-            <h1>HOW WE WORK</h1>
-            <p>We would love to get to know you, Hear about your ideas and execute the fuck out of them bitch. We will elevate your company to levels you couldnever imagine. We will make you look so fly your competition will sink into a deep depression wondering what they've been doing all this time.</p>
+            <h1>THE MEN BEHIND LEMON</h1>
+            
         </div>
     </div>
 
-    <!-- Contact page content -->
-
-    <div class="col-md-10 wrapper contact-wrapper">
-        <div class="container-fluid col-md-8">
-            <div class="contact-form-box">
-                <!--                <div class="col-md-8 contact-form-box">-->
-
-            </div>
-            <div class="col-md-7 about-page-img"></div>
-
-
-        </div>
-    </div>
-
+<div class="containers">
+  <div class="owl-carousel">
+    <div><img src="//placehold.it/400x500/f06/fff/?text=1" alt=""></div>
+    <div><img src="//placehold.it/400x500/f63/fff/?text=2" alt=""></div>
+    <div><img src="//placehold.it/400x500/fc3/fff/?text=3" alt=""></div>
+    <div><img src="//placehold.it/400x500/693/fff/?text=4" alt=""></div>
+  </div>
+</div>
+   
     <!-- load jquery -->
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/43033/owl.carousel.min.js">
+    </script>
 
     <!-- content fade out on scroll script -->
     <script>
-        $(window).scroll(function() {
-            $(".fade-out-on-scroll").css("opacity", 1 - $(window).scrollTop() / 150);
-        });
+
+
+        $(document).ready(function() {
+  var $owl = $('.owl-carousel');
+
+  $owl.children().each( function( index ) {
+    $(this).attr( 'data-position', index ); // NB: .attr() instead of .data()
+  });
+
+  $owl.owlCarousel({
+    center: true,
+    loop: false,
+    items: 4,
+  });
+
+  $(document).on('click', '.owl-item>div', function() {
+    $owl.trigger('to.owl.carousel', $(this).data( 'position' ) );
+  });
+});
+        
     </script>
 
 </body>
