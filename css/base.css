@@ -143,18 +143,7 @@ p {
 
 body {
     background: #1D1D1C;
-    /*    font-family: 'ceragr-blackitaliuploadedfile';*/
 }
-
-/*
-.container-fluid {
-    width: 70%;
-}
-
-.container {
-    max-width: 1544px;
-}
-*/
 
 .col-lg-4,
 col-md-4,
@@ -166,7 +155,6 @@ col-xs-4 {
 .post,
 .sidebar {
     display: block;
-    /*border: 1px solid #ffffff;*/
     border-radius: 3px;
 }
 
@@ -181,20 +169,17 @@ a {
 
 header {
     position: fixed;
-
     margin: 0 auto;
-
     top: 0;
     width: 100%;
-    /*    z-index: 100;*/
     z-index: 999;
-    /*    max-width: 1250px !important;*/
+    padding: 9px 0;
 }
 
 #navbar {
     flex-basis: 50%;
-    /*margin-right: -16px;** /* zorgde ervoor dat de header 16px naar rechts ging, geen idee waarom? */
     padding: .5rem 1rem 0rem 0rem!important;
+    padding-right: 0px !important;
 }
 
 .navbar {
@@ -205,8 +190,6 @@ header {
     flex-direction: unset;
     float: right;
 }
-
-
 
 header li {
     float: left;
@@ -220,40 +203,27 @@ header ul li a {
     padding: 14px 30px;
     border-bottom: 1px solid transparent;
     font-size: 13.6px;
+    /* lemon2.0*/
     height: 65px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 header ul li a:hover {
-    color: #fff;
+    color: #ccc;
     text-decoration: none;
-    /*    border-bottom: 3px solid #FFDE13;*/
-    border-bottom: 1.4px solid #Fff;
     transition: all ease 300ms;
 }
 
 .activeLink {
     color: #fff;
     text-decoration: none;
-    /*    border-bottom: 3px solid #FFDE13;*/
-    border-bottom: 1.4px solid #FFDE13;
+    color: #FFDE13 !important;
+    font-weight: bold;
 }
 
 .navbar-collapse {
     position: relative;
 }
-
-/*
-.navbar-collapse:after {
-    display: block;
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 1px;
-    width: 100%;
-}
-
-*/
 
 .bar-nav {
     width: 100%;
@@ -269,96 +239,20 @@ header ul li a:hover {
     bottom: 0px;
     position: absolute;
     z-index: -10;
+    display: none;
 }
 
-
-/* =================== progressbar scrolling- top =================== */
-
-progress {
-    /* Positioning */
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index;
-    999;
-    /* Dimensions */
-    width: 100%;
-    height: .07em;
-
-    /* Reset the apperance */
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-
-    /* Get rid of the default border in Firefox/Opera. */
-    border: none;
-
-    /* For Firefox/IE10+ */
-    background-color: transparent;
-
-    /* For IE10+, color of the progress bar */
-    color: red;
+a.navbar-brand {
+    font-size: 1.40rem;
 }
 
-progress::-webkit-progress-bar {
-    background-color: transparent;
+a.navitem-class {
+    padding-right: 0;
 }
 
-.flat::-webkit-progress-value {
-    background-color: red;
-}
-
-.flat::-moz-progress-bar {
-    background-color: red;
-}
-
-.single::-webkit-progress-value {
-    background-color: transparent;
-    background-image: -webkit-linear-gradient(left, transparent, red);
-}
-
-.single::-moz-progress-bar {
-    background-color: transparent;
-    background-image: -moz-linear-gradient(left, transparent, red);
-}
-
-.multiple::-webkit-progress-value {
-    background-image: -webkit-linear-gradient(-45deg,
-    transparent 33%, rgba(0, 0, 0, .1) 33%,
-    rgba(0, 0, 0, .1) 66%, transparent 66%),
-    -webkit-linear-gradient(left, green, red);
-}
-
-.multiple::-moz-progress-bar {
-    background-image: -moz-linear-gradient(-45deg,
-    transparent 33%, rgba(0, 0, 0, .1) 33%,
-    rgba(0, 0, 0, .1) 66%, transparent 66%),
-    -moz-linear-gradient(left, green, red);
-}
-
-.progress-container {
-    width: 100%;
-    background-color: transparent;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: .25em;
-    display: block;
-    z-index;
-    999;
-}
-
-.progress-bar {
-    background-color: red;
-    width: 50%;
-    display: block;
-    height: inherit;
-    z-index;
-    999;
-}
-
-progress#progressBar {
-    z-index: 999;
+span.creative-agency {
+    font-size: 12px;
+    font-family: 'cera-med';
 }
 
 /* =================== Intro ======================= */
@@ -602,6 +496,11 @@ progress#progressBar {
 
 /* ------------intro screen lemon 2.0 ------------- */
 
+#splashscreen {
+    z-index: 100;
+    position: relative;
+}
+
 h1.spashscreen-brand-name {
     font-size: 9rem;
     text-align: center;
@@ -610,24 +509,54 @@ h1.spashscreen-brand-name {
 p.spashscreen-brand-name {
     font-size: 2.5rem;
     letter-spacing: 7.2px;
-/*    margin-top: -25px;*/
     margin-top: -10px;
     text-align: center;
 }
 
 .splashscreen-content {
-/*    top: 61%;*/
     top: 50%;
 }
 
 .yellow-brand-bar {
     width: 380px;
     height: 7px;
-    background: yellow;
+    background: #FFDE13;
     margin-top: -25px;
     right: 20%;
     float: right;
     position: relative;
+}
+
+/* slider footer */
+
+.slider-footer {
+    height: 25px;
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    font-size: 13.6px;
+    letter-spacing: 1px;
+}
+
+.slider-social {
+    float: left;
+}
+
+.fa-instagram {
+    margin-right: 15px;
+}
+
+.slider-seemore {
+    float: right;
+}
+
+.slider-seemore a {
+    color: #FFDE13 !important;
+}
+
+.slider-seemore a:hover {
+    text-decoration: none;
+    color: #ccc !important;
 }
 
 /* ==================== OUR WORK ====================*/
