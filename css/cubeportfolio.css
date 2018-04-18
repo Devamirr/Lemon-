@@ -1131,7 +1131,7 @@
     text-align: center;
     display: inline-block;
     width: 150px;
-    /*    position: fixed;*/
+   position: relative;
     z-index: 50;
     left: 20px;
     top: 140px;
@@ -5143,7 +5143,6 @@ p.side-nav-tekst {
     width: auto;
     float: right;
     margin-bottom: 78px;
-    margin-top: 148px;
 
 }
 
@@ -5160,4 +5159,5 @@ p.side-nav-tekst {
 
 .row.page-heading {
     float: left;
+    
 }

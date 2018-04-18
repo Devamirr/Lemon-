@@ -297,6 +297,17 @@ footer .fa-instagram {
     color: #5851db;
 }
 
+footer. ul {  
+}
+
+footer ul li  {
+ width: 50px;
+    list-style-type: none;
+}
+
+footer .fa-instagram {
+    margin: 0;
+}
 /* =================== Intro ======================= */
 
 .icon-edit {
@@ -716,6 +727,7 @@ p.spashscreen-brand-name {
     height: 120px;
     /*    color: #101010;*/
     color: #2a2a2a;
+    width: 200px;
 }
 
 /* ---------- sidebar ---------- */
