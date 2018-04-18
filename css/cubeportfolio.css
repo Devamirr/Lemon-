@@ -1131,7 +1131,7 @@
     text-align: center;
     display: inline-block;
     width: 150px;
-    position: fixed;
+    /*    position: fixed;*/
     z-index: 50;
     left: 20px;
     top: 140px;
@@ -1159,8 +1159,11 @@
 }
 
 .cbp-l-filters-buttonCenter .cbp-filter-item.cbp-filter-item-active {
-    color: #ffde13;
+    color: #fff;
     cursor: default;
+    background: #ffde13 !important;
+    background: -webkit-linear-gradient(to right, #ff9600, #ffde13) !important;
+    background: linear-gradient(to right, #ff9600, #ffde13) !important;
 }
 
 .cbp-l-filters-buttonCenter .cbp-filter-item:first-child {}
@@ -5069,7 +5072,7 @@
 .cbp-l-project-details-list strong,
 .cbp-l-project-details-list > li,
 .cbp-l-project-details-list > div {
-    color: #fff;
+    color: #101010;
 }
 
 .cbp-l-project-details-list > li,
@@ -5124,4 +5127,37 @@
 
 p.side-nav-tekst {
     font-size: 13.6px;
+    line-height: 3.5;
+    /* 2.1 edit */
+}
+
+
+
+
+
+/* pagination edit */
+
+.cbp-l-filters-buttonCenter {
+    margin: 0;
+    height: 54px;
+    width: auto;
+    float: right;
+    margin-bottom: 78px;
+    margin-top: 148px;
+
+}
+
+#js-filters-masonry-projects li {
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 200px;
+    height: 54px;
+    margin-top: 0px;
+    text-align: center;
+    border-left: 1px solid #d6d6d6;
+    border-right: 1px solid #d6d6d6;
+}
+
+.row.page-heading {
+    float: left;
 }

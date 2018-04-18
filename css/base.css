@@ -19,19 +19,19 @@
 body {
     font-family: Arial, "Hiragino Kaku Gothic Pro W3", Meiryo, sans-serif;
     /*    background-color: #333;*/
-    background: #111 !important;
-    color: #fff;
+    background: #eeeeee !important;
+    color: #101010;
     text-align: center;
 }
 
 body a,
 body a:visited {
-    color: #ccc;
+    color: #2a2a2a;
     text-decoration: none;
 }
 
 body header a:visited {
-    color: #fff;
+    color: #2a2a2a;
 }
 
 body a:hover {
@@ -143,7 +143,7 @@ p {
 
 
 body {
-    background: #1D1D1C;
+    background: #eeeeee;
 }
 
 .col-lg-4,
@@ -198,7 +198,7 @@ header li {
 
 header ul li a {
     display: block;
-    color: #fff;
+    color: 101010;
     font-weight: 400;
     float: left;
     padding: 14px 30px;
@@ -218,8 +218,23 @@ header ul li a:hover {
 .activeLink {
     color: #fff;
     text-decoration: none;
-    color: #FFDE13 !important;
+    background: -webkit-linear-gradient(#ff9600, #ffde13);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-weight: bold;
+
+    /*    border-bottom: 2px solid #FFDE13;*/
+}
+
+.activeLink:after {
+    content: '';
+    background: #ffde13 !important;
+    background: -webkit-linear-gradient(to right, #ff9600, #ffde13) !important;
+    background: linear-gradient(to right, #ff9600, #ffde13) !important;
+    height: 1.5px;
+    width: 40px;
+    display: block;
+    margin-top: 10px;
 }
 
 .navbar-collapse {
@@ -254,6 +269,32 @@ a.navitem-class {
 span.creative-agency {
     font-size: 12px;
     font-family: 'cera-med';
+}
+
+/* ==================== FOOTER ====================*/
+
+footer {
+    height: 20px;
+    z-index: 9999999999999;
+    float: right;
+}
+
+/* color icons */
+
+footer .fa-linkedin-in {
+    color: #0077b5;
+}
+
+footer .fa-dribbble {
+    color: #ea4c89;
+}
+
+footer .fa-envelope {
+    color: #c1d82f;
+}
+
+footer .fa-instagram {
+    color: #5851db;
 }
 
 /* =================== Intro ======================= */
@@ -295,13 +336,15 @@ span.creative-agency {
     bottom: 0;
     width: 100%;
     /*    background-color: #1d1d1c;*/
-    background: #111111;
+    background: #eeeeee;
     z-index: 9999;
     display: block;
     height: 100vh;
+    /*
     background-image: url("../assets/backgrounds/photo-1522090416782-44d4729d433cv2.jpg");
     background-size: cover;
     background-position: center center;
+*/
 }
 
 .splashscreen-content {
@@ -319,7 +362,7 @@ span.creative-agency {
 
 .enter_link {
     display: block;
-/*    bottom: 20px;*/
+    /*    bottom: 20px;*/
     bottom: 26px;
     /* width: 200px; */
     /* padding: .5rem .0rem 0rem 0rem!important; */
@@ -329,9 +372,10 @@ span.creative-agency {
     position: absolute;
     text-decoration: none!important;
     float: right;
-    color: #FFDE13 !important;
+    /*    color: #FFDE13 !important;*/
     /* background: red; */
     transition: all 300ms ease;
+    display: none;
 }
 
 .enter_link:hover {
@@ -527,11 +571,13 @@ p.spashscreen-brand-name {
 .yellow-brand-bar {
     width: 380px;
     height: 7px;
-    background: #FFDE13;
+    background: #ffde13 !important;
+    background: -webkit-linear-gradient(to right, #ff9600, #ffde13) !important;
+    background: linear-gradient(to right, #ff9600, #ffde13) !important;
     margin-bottom: 30px;
     left: 6%;
     position: relative;
-    
+
 }
 
 /* slider footer */
@@ -597,7 +643,7 @@ p.spashscreen-brand-name {
     /* width: 24px; */
     height: 5px;
     margin-left: -12px;
-    border-left: 1px solid #fff;
+    border-left: 1px solid #2a2a2a;
 
     -webkit-animation: sdb07 2s infinite;
     animation: sdb07 2s infinite;
@@ -657,6 +703,10 @@ p.spashscreen-brand-name {
     opacity: 1;
 }
 
+.back-fade-filter {
+    opacity: 1;
+}
+
 /* ---------- container edit ---------- */
 
 /* ---------- sidebar heading ---------- */
@@ -664,7 +714,8 @@ p.spashscreen-brand-name {
 .row.page-heading {
     margin-top: 145px;
     height: 120px;
-    color: #fff;
+    /*    color: #101010;*/
+    color: #2a2a2a;
 }
 
 /* ---------- sidebar ---------- */
@@ -906,6 +957,13 @@ span.cbp-filter-counter {
     background-image: -webkit-linear-gradient(left, #FFDE13, transparent);
     background-image: -moz-linear-gradient(left, #FFDE13, transparent);
     background-image: -o-linear-gradient(left, #FFDE13, transparent);
+}
+
+/* col md edit */
+
+.col-without-pad {
+    padding-left: 0px;
+    padding-right: 0;
 }
 
 /* ==================== about PAGE ====================*/
