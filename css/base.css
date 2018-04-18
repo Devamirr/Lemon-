@@ -319,7 +319,8 @@ span.creative-agency {
 
 .enter_link {
     display: block;
-    bottom: 20px;
+/*    bottom: 20px;*/
+    bottom: 26px;
     /* width: 200px; */
     /* padding: .5rem .0rem 0rem 0rem!important; */
     right: 9%;
