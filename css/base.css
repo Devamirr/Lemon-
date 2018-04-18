@@ -1059,7 +1059,8 @@ body.contact {
 }
 
 .contact-form-box {
-    background: #111;
+/*    background: #111;*/
+    background: #1a1a1a;
     /*    background: #201F1F;*/
     float: left;
     height: auto;
@@ -1095,7 +1096,12 @@ body.contact {
 }
 
 .contact-form-box h2 {
-    color: #FFDE13;
+/*    color: #FFDE13;*/
+    
+
+    background: -webkit-linear-gradient(#ff9600, #ffde13);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: left;
     margin-bottom: 0px;
 }
