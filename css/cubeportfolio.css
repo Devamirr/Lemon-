@@ -5073,6 +5073,20 @@ font-size: 20px;
 
 /* case rows */
 
+/* case row 1 */
+/*
+.cbp-l-project-desc-img {
+background: red !important;    
+}
+*/
+
+img.cbp-logo-process-img {
+    width: 70%;
+    height: auto;
+    /* text-align: center; */
+    /* background-position: center; */
+}
+
 /* case row 2 */
 
 .three-img-row-block {
