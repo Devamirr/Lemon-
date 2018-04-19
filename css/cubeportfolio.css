@@ -1131,7 +1131,7 @@
     text-align: center;
     display: inline-block;
     width: 150px;
-   position: relative;
+    position: relative;
     z-index: 50;
     left: 20px;
     top: 140px;
@@ -3136,8 +3136,9 @@
 .cbp-popup-singlePage .cbp-popup-content {
     position: relative;
     z-index: 1;
-    margin-top: 145px;
-    max-width: 1024px;
+    margin-top: 130px;
+    /*    max-width: 1024px;*/
+    max-width: 1605px;
     vertical-align: top;
     width: 94%;
 }
@@ -3559,22 +3560,44 @@
 }
 
 .cbp-l-project-title {
-    color: #454444;
-    font: 600 42px/46px "Open Sans", sans-serif;
+    color: #2a2a2a;
+    font-family: 'Cera-med';
+    font-size: 8rem;
     letter-spacing: 2px;
     margin-bottom: 15px;
     text-align: center;
     text-transform: uppercase;
 }
 
-.cbp-l-project-subtitle {
-    color: #787878;
-    font: 400 14px/21px "Open Sans", sans-serif;
+.cbp-l-project-subtitle,
+.cbp-l-project-author {
+    color: #1a1a1a font: 400 14px/21px "Open Sans", sans-serif;
     margin: 0 auto 50px;
     max-width: 500px;
     text-align: center;
     line-height: 1;
 }
+
+.cbp-l-project-category-badge {
+    width: 120px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    text-align: center;
+    color: #fff;
+    background: #ffde13 !important;
+    background: -webkit-linear-gradient(to right, #ff9600, #ffde13) !important;
+    background: linear-gradient(to right, #ff9600, #ffde13) !important;
+    margin-left: 15px;
+    margin-right: 15px;
+    float: left;
+    border-radius: 5px;
+}
+
+.badge-wrapper {
+    width: 300px;
+    height: 106px;
+}
+
 
 .cbp-popup-singlePage .cbp-popup-content .cbp-l-project-img {
     display: block;
@@ -3586,10 +3609,10 @@
     overflow: hidden;
     margin: 40px auto 0;
     clear: both;
+    margin-top: 100px;
 }
 
 .cbp-l-project-desc {
-    float: left;
     width: 62%;
 }
 
@@ -3616,18 +3639,27 @@
 }
 
 .cbp-l-project-desc-title {
-    border-bottom: 1px solid #cdcdcd;
     margin-bottom: 22px;
-    color: #444;
+    /*    padding-left: 40px;*/
+    font-family: 'cera-med';
 }
 
 .cbp-l-project-desc-title span,
 .cbp-l-project-details-title span {
-    border-bottom: 1px solid #747474;
     display: inline-block;
     margin: 0 0 -1px 0;
-    font: 400 16px/36px "Open Sans", sans-serif;
     padding: 0 5px 0 0;
+    font-size: 1.40rem;
+    font-family: 'Cera-med;
+ color: #2a2a2a;
+}
+
+.cbp-l-project-desc-img {
+    /*    width: 600px;*/
+    width: 100%;
+    height: 400px;
+    background: #ffa602;
+    float: left;
 }
 
 .cbp-l-project-desc-text {
@@ -4168,13 +4200,15 @@
     margin: 0 4px;
     display: inline-block;
     cursor: pointer;
-    background: #c2c2c2;
+    background: #eeeeee;
     -webkit-transition: background 0.5s;
     transition: background 0.5s;
 }
 
 .cbp-nav-pagination-active {
-    background: #797979;
+    background: #ffde13 !important;
+    background: -webkit-linear-gradient(to right, #ff9600, #ffde13) !important;
+    background: linear-gradient(to right, #ff9600, #ffde13) !important;
 }
 
 .cbp-pagination-item {
@@ -4974,113 +5008,145 @@
 
 /* ==================== CASE DETAIL PAGE ====================*/
 
-/* Project title */
+/* slider */
 
-.cbp-popup-navigation-wrap {
-    /*display: none;*/
+.cbp-slider.cbp.cbp-ready.cbp-mode-slider {
+    margin-top: 106px;
 }
 
-.cbp-l-project-title,
-.cbp-l-project-subtitle {
-    text-align: left;
-    color: #fff;
+/* top */
+
+.badge-wrapper {
+    width: 300px;
+    margin-bottom: 106px;
 }
 
-.cbp-l-project-subtitle {
-    margin-left: 0px;
-}
-
-.project-title-left,
-.project-title-right {
-    float: left;
-    width: 50%;
-    margin-bottom: 30px;
-}
-
-.project-title-left {
-    border-right: 3px solid #fff;
-}
-
-.project-title-right {
-    padding-left: 50px;
-}
-
-.cbp-l-project-title,
-.project-title-right,
-.cbp-l-project-subtitle {
-    color: #fff;
-    font-family: 'cera-med';
-}
-
-.cbp-l-project-subtitle {
-    font-size: 40px
-}
+/* popup */
 
 .cbp-popup-wrap.cbp-popup-singlePage.cbp-popup-singlePage-open.cbp-popup-transitionend.cbp-popup-singlePage-sticky.cbp-popup-ready {
     z-index: 50;
-
-    background: #eeeeee;
 }
 
-.project-title-wrapper {
-    /*margin-bottom: 50px;*/
+/* bouw blokken */
+
+.leftimg-righttext .cbp-l-project-desc-text {
+    float: left;
 }
 
-/* popup navigation */
+.three-img-text .cbp-l-project-desc-img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
-.main-header-on-click {
-    font-size: 150%;
-    transition: all ease 700ms;
-    transition-delay: 0.8s;
-    /*
-            background: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(120, 120, 120, 1) 100%);
-    background: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 100%);
-    background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgb(255, 255, 255) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#787878', GradientType=1);
-*/
+.three-img-text .cbp-l-project-desc-text {
+    float: none;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+.rightimg-righttext .cbp-l-project-desc-text {
+    float: left;
+}
+
+/* case rows */
+
+/* case row 3 */
+
+.case-row-3 {
+    background: #e3e3e3;
+    padding: 160px;
+}
+
+.url-website-client span {
+
+    background: #000;
+    padding: 8px 10px;
+    color: #fff;
+    border-radius: 5px;
+    margin: 0 25px;
+}
+
+/* case row case footer */
+
+.col-md-6.subtitle {
     /*    background: red;*/
+    float: left;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 
-.main-header-on-click-remove {
-    background: blue;
+.col-md-6.client-socials {
+    float: left;
+    text-align: right;
+    padding-right: 0px;
 }
 
-/* verwijderen als er een betere oplossing voor is om de content onder de slider vandaan te krijgen */
-
-.cbp-l-project-container {
-    margin-top: 250px;
+.col-md-6.website-url {
+    /*    background: orange;*/
+    float: left;
+    text-align: right;
+    padding-right: 0px;
 }
 
-.cbp-popup-singlePage .cbp-popup-content {
-    /*    max-width: 75%;*/
+.top-wrapper {
+    border-bottom: 1px solid #2a2a2a;
+    height: 69px;
+    width: 100%;
 }
 
-.side-nav-tekst {
-    margin-bottom: 0px;
+.bottom-wrapper {
+    height: 69px;
+    width: 100%;
+    width: 100%;
 }
 
-/* project beschrijving */
+/* social media icon colors */
 
-.cbp-l-filters-buttonCenter .cbp-filter-item,
-.cbp-l-project-desc-text,
-.cbp-l-project-details-list strong,
-.cbp-l-project-details-list > li,
-.cbp-l-project-details-list > div {
-    color: #101010;
+.client-socials .fa-linkedin-in,
+.client-socials .fa-dribbble,
+.client-socials .fa-instagram {
+    font-size: 35px;
+    margin-left: 25px;
 }
 
-.cbp-l-project-details-list > li,
-.cbp-l-project-details-list > div {
-    border-bottom-color: transparent;
+.client-socials .fa-linkedin-in {
+    color: #0077b5;
 }
+
+.client-socials .fa-dribbble {
+    color: #ea4c89;
+}
+
+.client-socials .fa-envelope {
+    color: #c1d82f;
+    font-size: 35px;
+}
+
+.client-socials .fa-instagram {
+    color: #5851db;
+}
+
+/* case row ropyright */
+
+.case-page-copyright .cbp-l-project-desc-title {
+    text-align: center;
+}
+
+.case-page-copyright .cbp-l-project-desc-title span {
+    font-size: 13.6px;
+    font-family: 'Cera-med';
+    color: #2a2a2a;
+}
+
+
 
 /* project navigation */
 
 .cbp-slider .cbp-nav-pagination {
-    text-align: center;
-    bottom: 10;
-    top: 940px;
-    right: 0;
+    text-align: rght bottom: 10;
+    top: 785px;
+    right: 23px;
     left: 0;
 }
 
@@ -5093,15 +5159,8 @@
     display: none;
 }
 
-/*
-.cbp-popup-singlePage .cbp-popup-prev {
-    background:none;
-}*/
-
 .project2 .cbp-l-project-title {
-    background: -webkit-linear-gradient(#9b003f, #ce0054);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #1a1a1a;
 }
 
 /* filter sidebar edit */
@@ -5153,5 +5212,5 @@ p.side-nav-tekst {
 
 .row.page-heading {
     float: left;
-    
+
 }

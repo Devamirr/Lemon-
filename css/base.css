@@ -271,11 +271,16 @@ span.creative-agency {
     font-family: 'cera-med';
 }
 
+.header-container-fluid-without-padding {
+ padding-left: 0px;
+padding-right: 0px;
+}
+
 /* ==================== FOOTER ====================*/
 
 footer {
     height: 20px;
-    z-index: 9999999999999;
+/*    z-index: 9999999999999;*/
     float: right;
 }
 
