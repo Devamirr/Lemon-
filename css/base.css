@@ -591,9 +591,10 @@ p.spashscreen-brand-name {
 .yellow-brand-bar {
     width: 380px;
     height: 7px;
-    background: #ffde13 !important;
-    background: -webkit-linear-gradient(to right, #ff9600, #ffde13) !important;
-    background: linear-gradient(to right, #ff9600, #ffde13) !important;
+    background: rgb(255,150,0);
+    background: -webkit-linear-gradient(bottom, rgba(255,150,0,1) 31%, rgba(255,222,19,1) 60%);
+    background: -o-linear-gradient(bottom, rgba(255,150,0,1) 31%, rgba(255,222,19,1) 60%);
+    background: linear-gradient(to top, rgba(255,150,0,1) 31%, rgba(255,222,19,1) 60%);
     margin-bottom: 30px;
     left: 6%;
     position: relative;
@@ -632,7 +633,7 @@ p.spashscreen-brand-name {
 
 .line-gradient.case-header {
     background:red; 
-    top: 30px;
+    top: 60px;
     left: 25%;
 }
 
@@ -643,25 +644,25 @@ p.spashscreen-brand-name {
 .line-gradient.case-header a span:nth-of-type(1) {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
-    height:184px
+    height:134px
 }
 
 .line-gradient.case-header a span:nth-of-type(2) {
-    top: 190px;
+    top: 140px;
     -webkit-animation-delay: .15s;
     animation-delay: .15s;
     height: 12px;
 }
 
 .line-gradient.case-header a span:nth-of-type(3) {
-    top: 230px;
+    top: 170px;
     -webkit-animation-delay: .3s;
     animation-delay: .3s;
     height: 14px;
 }
 
 .line-gradient.case-header a span:nth-of-type(4) {
-    top: 250px;
+    top: 190px;
     -webkit-animation-delay: .45s;
     animation-delay: .45s;
     height: 5px;
@@ -681,10 +682,11 @@ p.spashscreen-brand-name {
     height: 5px;
     /* margin-left: -12px; */
     width: 3px;
-    background: #ffde13 !important;
-    background: -webkit-linear-gradient(to top, #ff9600, #ffde13) !important;
-    background: linear-gradient(to top, #ff9600, #ffde13) !important;
-/*    border-left: 2px solid #2a2a2a;*/
+    background: rgb(255,150,0);
+    background: -webkit-linear-gradient(bottom, rgba(255,150,0,1) 31%, rgba(255,222,19,1) 60%);
+    background: -o-linear-gradient(bottom, rgba(255,150,0,1) 31%, rgba(255,222,19,1) 60%);
+    background: linear-gradient(to top, rgba(255,150,0,1) 31%, rgba(255,222,19,1) 60%);
+/*  border-left: 2px solid #2a2a2a;*/
     -webkit-animation: sdb07 2s infinite;
     animation: sdb07 2s infinite;
     opacity: 0;
