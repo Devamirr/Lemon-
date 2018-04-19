@@ -2,6 +2,7 @@ $(window).scroll(function () {
     $(".back-fade").css("opacity", 1 - $(window).scrollTop() / 250);
     $(".back-fade-filter").css("opacity", 1 - $(window).scrollTop() / 250);
     $(".fade-out-on-scroll").css("opacity", 1 - $(window).scrollTop() / 150);
+    $(".cbp-l-loadMore-button").css("opacity", 1 - $(window).scrollTop() / 150);
     
     if ($(this).scrollTop()>0)
      {

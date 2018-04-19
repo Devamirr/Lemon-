@@ -281,9 +281,10 @@ span.creative-agency {
 /* ==================== FOOTER ====================*/
 
 footer {
-    height: 20px;
     /*    z-index: 9999999999999;*/
     float: right;
+    height: auto;
+    
 }
 
 /* color icons */
@@ -309,6 +310,7 @@ footer. ul {}
 footer ul li {
     width: 50px;
     list-style-type: none;
+    margin-top: 5px;
 }
 
 footer .fa-instagram {
@@ -636,13 +638,14 @@ p.spashscreen-brand-name {
 .demo a {
     position: absolute;
     bottom: 20px;
-    left: 50%;
+    left: 0;
     z-index: 2;
+    right: 0;
     display: inline-block;
     -webkit-transform: translate(0, -50%);
     transform: translate(0, -50%);
     text-decoration: none;
-    transition: opacity .3s;
+    /* transition: opacity .3s; */
 }
 
 .demo a:hover {
@@ -654,21 +657,17 @@ p.spashscreen-brand-name {
 }
 
 #section07 a span {
-    position: absolute;
+        position: absolute;
     top: 0;
-    /*    left: 50%;*/
-    left: 75%;
-    /* width: 24px; */
     height: 5px;
-    margin-left: -12px;
+    /* margin-left: -12px; */
     border-left: 1px solid #2a2a2a;
-
     -webkit-animation: sdb07 2s infinite;
     animation: sdb07 2s infinite;
     opacity: 0;
     box-sizing: border-box;
-    /*    margin-top: 20px;*/
-    margin-top: 55px;
+    /* margin-top: 20px; */
+    margin-top: 35px;
 }
 
 #section07 a span:nth-of-type(1) {
