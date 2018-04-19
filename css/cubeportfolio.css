@@ -3669,6 +3669,7 @@ font-size: 20px;
         /* width: 600px; */
     width: 100%;
     height: auto;
+    min-height: 400px;
     background: #ffa602;
     float: left;
     padding:0;
