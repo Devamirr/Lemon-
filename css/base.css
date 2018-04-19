@@ -591,10 +591,9 @@ p.spashscreen-brand-name {
 .yellow-brand-bar {
     width: 380px;
     height: 7px;
-    background: rgb(255,150,0);
-    background: -webkit-linear-gradient(bottom, rgba(255,150,0,1) 31%, rgba(255,222,19,1) 60%);
-    background: -o-linear-gradient(bottom, rgba(255,150,0,1) 31%, rgba(255,222,19,1) 60%);
-    background: linear-gradient(to top, rgba(255,150,0,1) 31%, rgba(255,222,19,1) 60%);
+    background: #ffde13 !important;
+    background: -webkit-linear-gradient(to right, #ff9600, #ffde13) !important;
+    background: linear-gradient(to right, #ff9600, #ffde13) !important;
     margin-bottom: 30px;
     left: 6%;
     position: relative;
@@ -631,6 +630,8 @@ p.spashscreen-brand-name {
     background: red !important;
 }
 
+
+/* case page line effect */
 .line-gradient.case-header {
     background:red; 
     top: 60px;
@@ -668,6 +669,8 @@ p.spashscreen-brand-name {
     height: 5px;
 }
 
+/* filter page line effect */
+
 .line-gradient {  
         width: 20px;
     position: absolute;
@@ -681,7 +684,7 @@ p.spashscreen-brand-name {
     top: 0;
     height: 5px;
     /* margin-left: -12px; */
-    width: 3px;
+    width: 2px;
     background: rgb(255,150,0);
     background: -webkit-linear-gradient(bottom, rgba(255,150,0,1) 31%, rgba(255,222,19,1) 60%);
     background: -o-linear-gradient(bottom, rgba(255,150,0,1) 31%, rgba(255,222,19,1) 60%);
@@ -699,28 +702,28 @@ p.spashscreen-brand-name {
 .line-gradient a span:nth-of-type(1) {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
-    height:42px
+    height:84px
 }
 
 .line-gradient a span:nth-of-type(2) {
-    top: 45px;
+    top: 70px;
     -webkit-animation-delay: .15s;
     animation-delay: .15s;
-    height: 9px;
+    height: 20px;
 }
 
 .line-gradient a span:nth-of-type(3) {
-    top: 65px;
+    top: 100px;
     -webkit-animation-delay: .3s;
     animation-delay: .3s;
-    height: 7px;
+    height: 15px;
 }
 
 .line-gradient a span:nth-of-type(4) {
-    top: 74px;
+    top: 120px;
     -webkit-animation-delay: .45s;
     animation-delay: .45s;
-    height: 4px;
+    height: 8px;
 }
 
 
