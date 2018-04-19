@@ -630,6 +630,98 @@ p.spashscreen-brand-name {
     background: red !important;
 }
 
+.line-gradient.case-header {
+    background:red; 
+    top: 30px;
+    left: 25%;
+}
+
+.line-gradient.case-header a span {
+    width: 4px;
+}
+
+.line-gradient.case-header a span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    height:184px
+}
+
+.line-gradient.case-header a span:nth-of-type(2) {
+    top: 190px;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+    height: 12px;
+}
+
+.line-gradient.case-header a span:nth-of-type(3) {
+    top: 230px;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+    height: 14px;
+}
+
+.line-gradient.case-header a span:nth-of-type(4) {
+    top: 250px;
+    -webkit-animation-delay: .45s;
+    animation-delay: .45s;
+    height: 5px;
+}
+
+.line-gradient {  
+        width: 20px;
+    position: absolute;
+    left: 110px;
+    top: 230px;
+
+}
+
+.line-gradient a span {
+    position: absolute;
+    top: 0;
+    height: 5px;
+    /* margin-left: -12px; */
+    width: 3px;
+    background: #ffde13 !important;
+    background: -webkit-linear-gradient(to top, #ff9600, #ffde13) !important;
+    background: linear-gradient(to top, #ff9600, #ffde13) !important;
+/*    border-left: 2px solid #2a2a2a;*/
+    -webkit-animation: sdb07 2s infinite;
+    animation: sdb07 2s infinite;
+    opacity: 0;
+    box-sizing: border-box;
+    /* margin-top: 20px; */
+    margin-top: 35px;
+}
+
+
+.line-gradient a span:nth-of-type(1) {
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    height:42px
+}
+
+.line-gradient a span:nth-of-type(2) {
+    top: 45px;
+    -webkit-animation-delay: .15s;
+    animation-delay: .15s;
+    height: 9px;
+}
+
+.line-gradient a span:nth-of-type(3) {
+    top: 65px;
+    -webkit-animation-delay: .3s;
+    animation-delay: .3s;
+    height: 7px;
+}
+
+.line-gradient a span:nth-of-type(4) {
+    top: 74px;
+    -webkit-animation-delay: .45s;
+    animation-delay: .45s;
+    height: 4px;
+}
+
+
 #section07 p {
     font-size: 13.6px;
     letter-spacing: 1px;
@@ -659,7 +751,7 @@ p.spashscreen-brand-name {
     top: 0;
     height: 5px;
     /* margin-left: -12px; */
-    width: 2px;
+    width: 1px;
     background: #2a2a2a;
 /*    border-left: 2px solid #2a2a2a;*/
     -webkit-animation: sdb07 2s infinite;

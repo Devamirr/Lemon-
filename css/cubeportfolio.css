@@ -3562,6 +3562,8 @@ font-size: 20px;
     left: 0;
 }
 
+
+
 .cbp-l-project-title {
     color: #2a2a2a;
     font-family: 'Cera-med';
@@ -3570,6 +3572,11 @@ font-size: 20px;
     margin-bottom: 15px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.cbp-l-project-title h1{
+    font-family: 'Cera-med';
+    font-size: 8rem;
 }
 
 .cbp-l-project-subtitle,
