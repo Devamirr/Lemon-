@@ -838,6 +838,12 @@
 .cbp-caption-zoom .cbp-caption:hover .cbp-caption-defaultWrap {
     -webkit-transform: scale(1.25);
     transform: scale(1.25);
+    filter: blur(2px);
+/* Browser Specific*/
+-webkit-filter: blur(2px);
+-moz-filter: blur(2px);
+-o-filter: blur(2px);
+-ms-filter: blur(2px);
 }
 
 .cbp-caption-zoom .cbp-caption-activeWrap {
