@@ -3616,7 +3616,7 @@
     max-width: 100%;
 }
 
-.cbp-l-project-container {
+.cbp-l-project-container, .cbp-l-about-container {
     overflow: hidden;
     margin: 40px auto 0;
     clear: both;
@@ -5067,14 +5067,14 @@
 /*    margin: 0 auto;*/
     width: 100%;
     margin-top: 580px;
-
 }
 
-.rightimg-righttext .cbp-l-project-desc-text {
+.rightimg-lefttext-wide .cbp-l-project-desc-text {
     float: left;
     height: 400px;
     padding-right: 45px;
 }
+
 
 /* case rows */
 

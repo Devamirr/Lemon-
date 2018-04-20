@@ -911,6 +911,10 @@ span.cbp-filter-counter {
     padding: 0px;
 }
 
+.otherclass {
+    background: red;
+}
+
 .overlay-bottom {
     width: 100%;
     height: 50px;
@@ -962,6 +966,9 @@ span.cbp-filter-counter {
 .overlay p.project-category {
     color: #fff;
     margin-bottom: 0px;
+    position: fixed;
+    bottom: -40px;
+    font-style: italic;
 }
 
 .overlay h1.project-name {
@@ -1374,6 +1381,8 @@ body.contact {
 
 /* ==================== ABOUT PAGE ====================*/
 
+/*
+
 .about-page-img {
     background-image: url(../assets/backgrounds/husky.jpg);
     background-repeat: no-repeat;
@@ -1388,3 +1397,131 @@ body.contact {
     right: -50px;
     margin-top: 410px;
 }
+*/
+
+.rightimg-lefttext {
+    float: none;
+    background: red;
+    text-align: left
+}
+
+.cbp-l-about-desc-title,
+.cbp-l-about-desc-subtitle {
+    margin-bottom: 22px;
+    margin-bottom: 73px;
+    font-family: 'cera-med';
+    text-align: left
+}
+
+.cbp-about-desc-title {
+    color: #2a2a2a;
+    /* LUKT NIET */
+}
+
+.cbp-l-about-desc-subtitle {
+    font-size: 1.40rem;
+    color: #989797;
+}
+
+.about .cbp-l-project-desc-text {
+    width: 100%;
+    height: auto;
+    min-height: 400px;
+    background: #ffa602;
+    float: left;
+    padding: 120px 100px;
+}
+
+/* quick-facts-about-lemon row */
+
+.quick-facts-about-lemon {
+    width: 100%;
+    background: #d6d6d6;
+    height: 145px;
+}
+
+/* items */
+
+.facts-item {
+    padding: 52px 90px;
+    text-align: left;
+    color: #2a2a2a;
+    height: 145px;
+    float: left;
+    text-transform: uppercase;
+}
+
+.quick-facts-item {
+    padding: 62px 90px;
+    background: #ffde13 !important;
+    background: -webkit-linear-gradient(to right, #ff9600, #ffde13) !important;
+    background: linear-gradient(to right, #ff9600, #ffde13) !important;
+    color: #fff;
+}
+
+.facts-label {}
+
+.facts-result {
+    font-size: 1.40rem;
+}
+
+
+/* capabilities row */
+
+.capabilities {
+    width: 100%;
+    height: 745px;
+    padding: 92px 160px;
+    margin-top: 95px;
+
+}
+
+.capabilities-wrapper {
+    margin-top: 125px;
+}
+
+.cbp-l-about-desc-capabilities-title {
+    color: #989797;
+    font-family: 'Cera-med';
+    margin-bottom: 30px;
+}
+
+.capabilities-text {
+    float: left;
+    text-align: left;
+}
+
+.capabilities-text p {
+    font: 400 13px/20px "Open Sans", sans-serif;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.capabilities .cbp-l-project-desc-title span {
+    text-align: left;
+    width: 100%;
+}
+
+/* about container */
+.cbp-l-about-container.cbp-l-about-container-without-top-margin {
+    margin-top: 0px;
+}
+
+
+
+/* ==================== ADD CLASS ON SCROLL TEST ====================*/
+
+/*
+.clearHeader{
+height: 200px; 
+background-color: rgba(107,107,107,0.66);
+position: fixed;
+top:200;
+width: 100%;
+}
+*/
+
+/*
+.darkHeader {
+    background: red;
+}*/

@@ -55,7 +55,7 @@
     </div>
 
     <!-- Header -->
-    <header class="main-header header fade-out-on-scroll">
+    <header class="clearHeader main-header header fade-out-on-scroll">
         <nav class="col-md-10 navbar navbar-default">
             <div class="container-fluid header-container-fluid-without-padding">
                 <div id="navbar-brand" class="navbar-header">
@@ -435,6 +435,18 @@
                 }, 500, 'linear');
 
             });
+        });
+    </script>
+
+    <script>
+        $(window).scroll(function() {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 500) {
+                $(".clearHeader").addClass("darkHeader");
+            } else {
+                $(".clearHeader").removeClass("darkHeader");
+            }
         });
     </script>
 
