@@ -176,6 +176,7 @@ header {
     width: 100%;
     z-index: 999;
     padding: 9px 0;
+    background: #eeeeee;
 }
 
 #navbar {
@@ -923,21 +924,21 @@ span.cbp-filter-counter {
 }
 
 .overlay {
-    bottom: 0; */
-    top: 0;
-    background: rgba(255,149,0,0.83);
-background: -moz-linear-gradient(45deg, rgba(255,149,0,0.83) 0%, rgba(255,224,19,0.83) 100%);
-background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255,149,0,0.83)), color-stop(100%, rgba(255,224,19,0.83)));
-background: -webkit-linear-gradient(45deg, rgba(255,149,0,0.83) 0%, rgba(255,224,19,0.83) 100%);
-background: -o-linear-gradient(45deg, rgba(255,149,0,0.83) 0%, rgba(255,224,19,0.83) 100%);
-background: -ms-linear-gradient(45deg, rgba(255,149,0,0.83) 0%, rgba(255,224,19,0.83) 100%);
-background: linear-gradient(45deg, rgba(255,149,0,0.83) 0%, rgba(255,224,19,0.83) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9500', endColorstr='#ffe013', GradientType=1 );
+    bottom: 0;
+    */ top: 0;
+    background: rgba(255, 149, 0, 0.83);
+    background: -moz-linear-gradient(45deg, rgba(255, 149, 0, 0.83) 0%, rgba(255, 224, 19, 0.83) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(255, 149, 0, 0.83)), color-stop(100%, rgba(255, 224, 19, 0.83)));
+    background: -webkit-linear-gradient(45deg, rgba(255, 149, 0, 0.83) 0%, rgba(255, 224, 19, 0.83) 100%);
+    background: -o-linear-gradient(45deg, rgba(255, 149, 0, 0.83) 0%, rgba(255, 224, 19, 0.83) 100%);
+    background: -ms-linear-gradient(45deg, rgba(255, 149, 0, 0.83) 0%, rgba(255, 224, 19, 0.83) 100%);
+    background: linear-gradient(45deg, rgba(255, 149, 0, 0.83) 0%, rgba(255, 224, 19, 0.83) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9500', endColorstr='#ffe013', GradientType=1);
     overflow: hidden;
     width: 100%;
     height: 100%;
     transition: .5s ease;
-    position:absolute;
+    position: absolute;
 }
 
 .post:hover .overlay {
@@ -960,7 +961,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff9500', end
 }
 
 .overlay p.project-category {
-        color: #fff;
+    color: #fff;
     margin-bottom: 0px;
     /* position: fixed; */
     /* bottom: 10px; */
@@ -1478,7 +1479,6 @@ body.contact {
     padding: 92px 160px;
     margin-top: 95px;
     /* margin-bottom: 100px; */
-
 }
 
 .capabilities-wrapper {
@@ -1532,7 +1532,7 @@ body.contact {
     padding-bottom: 15px;
 }
 
-.team-member .item {
+.about .team-member .item {
     background: #ffa602;
     width: 100%;
     height: 460px;
@@ -1554,3 +1554,104 @@ width: 100%;
 .darkHeader {
     background: red;
 }*/
+
+/* ==================== TEAM MEMBER PAGE ====================*/
+
+.wrapper.team-member-page-top-wrapper {
+    float: left;
+    border: 1px solid red;
+}
+
+.wrapper.team-member-page-top-wrapper {
+    padding: 100px 150px;
+}
+
+.team-member-page .container-without-top-margin {
+    margin-top: 0px;
+}
+
+.wrapper team-member-page-top-wrapper {
+    float: left;
+}
+
+.cbp-l-team-member-desc-img {
+    width: 600px;
+    /*    width: 100%;*/
+    height: auto;
+    min-height: 540px;
+    background: #ffa602;
+    float: left;
+    padding: 0;
+}
+
+.col-md-6.cbp-l-team-member-desc {
+    float: left;
+}
+
+.cbp-l-team-member-title {
+    color: #2a2a2a;
+    font-family: 'Cera-med';
+    font-size: 7rem;
+    letter-spacing: 2px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.cbp-l-team-member-subtitle {
+    font-size: 1.40rem;
+    color: #989797;
+    font-family: 'Cera-med';
+}
+
+.line-gradient.team-member-header {
+    background: red;
+    top: 60px;
+    left: 25%;
+    left: -50px;
+}
+
+.team-member-page .badge-wrapper {
+    width: 600px;
+    margin-bottom: 106px;
+}
+
+.team-member-information .item {
+    /*    background: #ffa602;*/
+    width: 100%;
+    /*    height: 460px;*/
+    min-height: 190px;
+}
+
+.team-member .member-information {
+    width: 60%;
+}
+
+.team-member-information-content {}
+
+.member-information .cbp-l-team-member-desc-title,
+.member-information .cbp-l-team-member-desc-subtitle {
+    font-family: 'cera-med';
+    font-size: 1.40rem;
+    color: #2a2a2a;
+}
+
+.member-information .cbp-l-team-member-desc-subtitle {
+    color: #2a2a2a;
+    width: 100%;
+    font-size: 1.15rem;
+}
+
+.cbp-l-team-member-desc p {
+    color: #a4a4a4;
+}
+
+.divider {
+    width: 80px;
+    height: 1px;
+    background: #a5a4a4;
+    float: left;
+}
+
+.team-member-page .cbp-l-team-member-desc-title {
+    font-size: 2rem;
+}
