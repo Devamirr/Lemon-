@@ -1399,6 +1399,10 @@ body.contact {
 }
 */
 
+.about img.cbp-logo-process-img {
+    display: none;
+}
+
 .rightimg-lefttext {
     float: none;
     background: red;
@@ -1407,15 +1411,13 @@ body.contact {
 
 .cbp-l-about-desc-title,
 .cbp-l-about-desc-subtitle {
-    margin-bottom: 22px;
-    margin-bottom: 73px;
+    margin-bottom: 35px;
     font-family: 'cera-med';
     text-align: left
 }
 
-.cbp-about-desc-title {
+.cbp-l-about-desc-title {
     color: #2a2a2a;
-    /* LUKT NIET */
 }
 
 .cbp-l-about-desc-subtitle {
@@ -1426,8 +1428,6 @@ body.contact {
 .about .cbp-l-project-desc-text {
     width: 100%;
     height: auto;
-    min-height: 400px;
-    background: #ffa602;
     float: left;
     padding: 120px 100px;
 }
@@ -1503,6 +1503,7 @@ body.contact {
 }
 
 /* about container */
+
 .cbp-l-about-container.cbp-l-about-container-without-top-margin {
     margin-top: 0px;
 }
