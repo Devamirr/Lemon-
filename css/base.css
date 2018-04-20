@@ -1434,6 +1434,14 @@ body.contact {
 
 /* quick-facts-about-lemon row */
 
+.cbp-l-about-container.cbp-l-about-container-without-top-margin.full-width {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+}
+
 .quick-facts-about-lemon {
     width: 100%;
     background: #d6d6d6;
@@ -1508,7 +1516,30 @@ body.contact {
     margin-top: 0px;
 }
 
+/* the men behind lemon row */
 
+.the-men-behind-lemon .cbp-l-project-desc-title {
+    text-align: left;
+}
+
+.the-men-behind-lemon {}
+
+.the-men-behind-lemon-wrapper {
+    /*    margin-top: 15px;*/
+}
+
+.team-member {
+    height: 460px;
+    float: left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.team-member .item {
+    background: #ffa602;
+    width: 100%;
+    height: 460px;
+}
 
 /* ==================== ADD CLASS ON SCROLL TEST ====================*/
 
