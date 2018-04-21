@@ -19,7 +19,7 @@
 body {
     font-family: Arial, "Hiragino Kaku Gothic Pro W3", Meiryo, sans-serif;
     background: #eeeeee !important;
-    color: #1a1a1a;
+    color: #2a2a2a !important;
     text-align: center;
 }
 
@@ -1096,7 +1096,7 @@ body.contact {
 }
 
 .contact-form-box h2 {
-    color: #1a1a1a;
+    color: #2a2a2a;
     text-align: left;
     margin-bottom: 0px;
 }
@@ -1263,15 +1263,15 @@ textarea {
 
 input[placeholder],
 textarea[placeholder] {
-    color: #1a1a1a;
+    color: #2a2a2a;
 }
 
 input::placeholder {
-    color: #1a1a1a;
+    color: #2a2a2a;
 }
 
 textarea::placeholder {
-    color: #1a1a1a;
+    color: #2a2a2a;
 }
 
 input.button {
@@ -1486,7 +1486,7 @@ body.contact {
 }
 
 .cbp-l-about-desc-capabilities-title {
-    color: #989797;
+    color: #2a2a2a;
     font-family: 'Cera-med';
     margin-bottom: 30px;
 }
@@ -1498,7 +1498,7 @@ body.contact {
 
 .capabilities-text p {
     font: 400 13px/20px "Open Sans", sans-serif;
-    color: #555;
+    color: #2a2a2a;
     margin-bottom: 20px;
 }
 
@@ -1525,8 +1525,8 @@ body.contact {
     /*    margin-top: 15px;*/
 }
 
-.team-member {
-    height: 460px;
+.team-member-page .team-member {
+    height: 270px;
     float: left;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -1537,6 +1537,11 @@ body.contact {
     width: 100%;
     height: 460px;
 }
+
+.about .col-md-3.col-xs-3.team-member {
+    float: left;
+}
+
 
 /* ==================== ADD CLASS ON SCROLL TEST ====================*/
 
@@ -1559,11 +1564,12 @@ width: 100%;
 
 .wrapper.team-member-page-top-wrapper {
     float: left;
-    border: 1px solid red;
 }
 
 .wrapper.team-member-page-top-wrapper {
-    padding: 100px 150px;
+/*    padding: 100px 150px;*/
+    padding: 35px 150px;
+    margin-top: 0px;
 }
 
 .team-member-page .container-without-top-margin {
@@ -1584,8 +1590,13 @@ width: 100%;
     padding: 0;
 }
 
-.col-md-6.cbp-l-team-member-desc {
+.team-member-page .col-md-6.cbp-l-team-member-desc {
     float: left;
+}
+
+.team-member-page .cbp-l-team-member-desc {
+    font: 400 13px/20px "Open Sans", sans-serif;
+    color: #2a2a2a;
 }
 
 .cbp-l-team-member-title {
@@ -1613,6 +1624,9 @@ width: 100%;
 .team-member-page .badge-wrapper {
     width: 600px;
     margin-bottom: 106px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    height: 58px;
 }
 
 .team-member-information .item {
@@ -1654,4 +1668,8 @@ width: 100%;
 
 .team-member-page .cbp-l-team-member-desc-title {
     font-size: 2rem;
+}
+
+.team-member-page img.cbp-logo-process-img {
+    display: none;
 }
