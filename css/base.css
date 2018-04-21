@@ -1614,11 +1614,16 @@ width: 100%;
     font-family: 'Cera-med';
 }
 
+.line-gradient.aboutPage {
+    left:10px;
+    top: 90px;
+}
+
 .line-gradient.team-member-header {
     background: red;
-    top: 60px;
-    left: 25%;
-    left: -50px;
+    top: 0px;
+    /* left: 25%; */
+    left: -80px;
 }
 
 .team-member-page .badge-wrapper {
