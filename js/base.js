@@ -1,3 +1,9 @@
+setTimeout (function (){ 
+document.querySelector("div.loading").classList.add("hidden")
+
+}, 3000)
+
+
 $(window).scroll(function () {
     $(".back-fade").css("opacity", 1 - $(window).scrollTop() / 250);
     $(".back-fade-filter").css("opacity", 1 - $(window).scrollTop() / 250);
