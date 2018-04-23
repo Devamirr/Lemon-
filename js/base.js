@@ -1,7 +1,7 @@
 setTimeout (function (){ 
 document.querySelector("div.loading").classList.add("hidden")
 
-}, 8000)
+}, 4000)
 
 
 $(window).scroll(function () {
