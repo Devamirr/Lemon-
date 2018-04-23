@@ -198,7 +198,7 @@ a {
     background-size: auto 70px;
     width: 70px;
     height: 70px;
-    animation: loader 2.4s steps(27) infinite;
+    animation: loader 2s steps(27) infinite;
 }
 
 @keyframes loader {
@@ -1785,30 +1785,4 @@ width: 100%;
 
 #html-css {
     width: 95%;
-}
-
-.navbar, .navbar-inverse {
-	border-radius: 0;
-	border: none;
-	margin-bottom: 0;
-	min-height: 80px;
-}
-
-.nav li {
-	display: inline;
-	color: white;
-}
-
-.navbar-inverse .navbar-nav > li > a {
-	color: #ffffff;
-	font-family: Lato;
-	font-size: 1.7em;
-	font-weight: 300;
-	padding: 30px 25px 33px 25px;
-}
-
-.navbar-inverse .navbar-nav li a:hover {
-	background-color: #444444;
-	transition: 0.7s all linear;
-	height: 100%;
 }
