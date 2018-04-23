@@ -184,6 +184,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .loading.hidden {
@@ -191,12 +192,31 @@ a {
     pointer-events: none;
 }
 
+.loading-sprite {
+    background-image: url(../img/loader-sprite.png);
+    background-position: 0 0;
+    background-size: auto 70px;
+    width: 70px;
+    height: 70px;
+    animation: loader 2.4s steps(27) infinite;
+}
+
+@keyframes loader {
+    0% { 
+        background-position: 0 0;
+    }
+    
+    100% {
+        background-position: -1905px 0;
+    }
+}
+
 header {
     position: fixed;
     margin: 0 auto;
     top: 0;
     width: 100%;
-    z-index: 999;
+    z-index: 990;
     padding: 9px 0;
     background: #eeeeee;
 }
