@@ -18,7 +18,7 @@
 
 body {
     font-family: Arial, "Hiragino Kaku Gothic Pro W3", Meiryo, sans-serif;
-    background: #eeeeee !important;
+    background: #1C1C1B !important;
     color: #2a2a2a !important;
     text-align: center;
 }
@@ -144,7 +144,7 @@ p {
 
 
 body {
-    background: #eeeeee;
+    background: #1C1C1B;
 }
 
 .col-lg-4,
@@ -371,7 +371,7 @@ header {
     width: 100%;
     z-index: 990;
     padding: 9px 0;
-    background: #eeeeee;
+    background: #1C1C1B;
 }
 
 #navbar {
@@ -549,7 +549,7 @@ footer .fa-instagram {
     left: 0;
     bottom: 0;
     width: 100%;
-    background: #eeeeee;
+    background: #1C1C1B;
     z-index: 9999;
     display: block;
     height: 100vh;
@@ -1194,7 +1194,7 @@ span.cbp-filter-counter {
 /* ==================== about PAGE ====================*/
 
 body.about {
-    background: #333335;
+    background: #1C1C1B;
     /* Old browsers */
     background: -moz-linear-gradient(-45deg, #333335 0%, #151517 100%);
     /* FF3.6-15 */
