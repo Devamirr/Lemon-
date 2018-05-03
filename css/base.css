@@ -25,12 +25,12 @@ body {
 
 body a,
 body a:visited {
-    color: #2a2a2a;
+    color: #eee;
     text-decoration: none;
 }
 
 body header a:visited {
-    color: #2a2a2a;
+    color: #eee;
 }
 
 body a:hover {
@@ -395,7 +395,7 @@ header li {
 
 header ul li a {
     display: block;
-    color: 101010;
+    color: #101010;
     font-weight: 400;
     float: left;
     padding: 14px 30px;
@@ -771,6 +771,7 @@ p.spashscreen-brand-name {
 
 .splashscreen-content {
     top: 50%;
+    color: #eee;
 }
 
 .yellow-brand-bar {
@@ -942,7 +943,7 @@ p.spashscreen-brand-name {
     top: 0;
     height: 5px;
     width: 1px;
-    background: #2a2a2a;
+    background: #eee;
     -webkit-animation: sdb07 2s infinite;
     animation: sdb07 2s infinite;
     opacity: 0;
