@@ -756,6 +756,13 @@ footer .fa-instagram {
 
 /* ------------intro screen lemon 2.0 ------------- */
 
+
+.container-edit {
+    margin-right: 0px;
+    max-width: 85%;
+}
+
+
 #splashscreen {
     z-index: 100;
     position: relative;
