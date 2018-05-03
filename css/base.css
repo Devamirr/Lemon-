@@ -573,6 +573,24 @@ footer .fa-instagram {
     transform: translate(-50%, -50%);
 }
 
+.intro-img {
+    background-image: url("../assets/backgrounds/husky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0px;
+    opacity: 1;
+    -webkit-animation: img-left-fade-in 4s linear normal forwards;
+    animation: img-left-fade-in 4s linear normal forwards;
+    -webkit-transform: translate(-50%, -50%); 
+    transform: translate(20%, -20%); 
+}
+
 .enter_link {
     display: block;
     bottom: 26px;
@@ -714,21 +732,7 @@ footer .fa-instagram {
 }
 
 
-.intro-img {
-    background-image: url("../assets/backgrounds/husky.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    height: 600px;
-    width: 65%;
-    position: absolute;
-    right: 0;
-    left: 0;
-    top: 0px;
-    opacity: 1;
-    -webkit-animation: img-left-fade-in 8s linear normal forwards;
-    animation: img-left-fade-in 8s linear normal forwards;
-}
+
 
 
 .photo {
@@ -796,6 +800,8 @@ p.spashscreen-brand-name {
     font-size: 13.6px;
     letter-spacing: 1px;
     overflow: visible;
+    z-index:999
+        
 }
 
 .slider-social {
