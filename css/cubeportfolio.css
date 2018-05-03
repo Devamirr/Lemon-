@@ -5285,14 +5285,15 @@ p.side-nav-tekst {
 /* pagination edit */
 
 .cbp-l-filters-buttonCenter {
-    margin: 0;
-    height: 54px;
-    width: auto;
-    float: right;
-    margin-bottom: 78px;
-        background: #eaeaea;
-
-}
+text-align: center;
+display: inline-block;
+width: 150px;
+position: fixed;
+z-index: 50;
+left: 20px;
+top: 140px;
+text-align: center;
+} 
 
 #js-filters-masonry-projects li {
     margin-left: 5px;
